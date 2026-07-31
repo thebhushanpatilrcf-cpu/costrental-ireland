@@ -1,0 +1,69 @@
+{
+  "last_updated": "2026-07-31T14:00:00Z",
+  "listings": [
+    {
+      "id": "buy-moinearnadarach",
+      "name": "Moinear na Darach",
+      "location": "Quin, Co. Clare",
+      "county": "Clare",
+      "bedrooms": "3 Bed",
+      "price": 303839,
+      "status": "open",
+      "status_text": "Applications Open",
+      "ber_rating": "A2",
+      "date_closes": "2026-08-20",
+      "availability": "1 Units",
+      "url": "https://affordablehomes.ie/buy/moinearnadarach/",
+      "image": "https://affordablehomes.ie/uploads/images/Picture1(3).jpg",
+      "description": "3 bed home in Quin, Co. Clare. Applications close 20 August 2026 at 12:00."
+    },
+    {
+      "id": "buy-fortview",
+      "name": "Fort View",
+      "location": "Dumlark, Co. Cavan",
+      "county": "Cavan",
+      "bedrooms": "3 Bed",
+      "price": 289895,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "ber_rating": "",
+      "date_opens": "2026-08-17",
+      "availability": "12 Units",
+      "url": "https://affordablehomes.ie/buy/fortview/",
+      "image": "https://affordablehomes.ie/uploads/images/Fortview%202.jpg",
+      "description": "3 bed homes in Dumlark, Co. Cavan. 12 units available. Applications open 17 August 2026."
+    },
+    {
+      "id": "buy-culcaislean",
+      "name": "Cul Caislean",
+      "location": "Taghmon, Co. Wexford",
+      "county": "Wexford",
+      "bedrooms": "2 & 3 Bed",
+      "price": 225000,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "ber_rating": "A2",
+      "date_opens": "2026-08-05",
+      "availability": "10 Units",
+      "url": "https://affordablehomes.ie/buy/culcaislean/",
+      "image": "https://affordablehomes.ie/uploads/images/Picture1(2).jpg",
+      "description": "2 & 3 bed homes in Taghmon, Co. Wexford. 10 units. Applications open 5 August 2026."
+    },
+    {
+      "id": "buy-stlaurencepark",
+      "name": "St Laurence Park",
+      "location": "Stillorgan, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "price": 255000,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "ber_rating": "",
+      "date_opens": "2026-08-12",
+      "availability": "40 Units",
+      "url": "https://affordablehomes.ie/buy/stlaurencepark/",
+      "image": "https://affordablehomes.ie/uploads/images/SON7270-010.jpg",
+      "description": "1 bed apartments in Stillorgan, Co. Dublin. 40 units available. Applications open 12 August 2026."
+    }
+  ]
+}

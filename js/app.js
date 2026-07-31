@@ -383,6 +383,14 @@ function switchTab(tab) {
     document.getElementById('stat-listings-label').textContent = 'Accommodations';
     document.getElementById('stat-open-label').textContent = 'Available Now';
     document.getElementById('stat-savings-label').textContent = 'Per Week Range';
+  } else if (tab === 'purchase') {
+    const openPurchase = purchaseListings.filter(l => l.status === 'open').length;
+    document.getElementById('stat-listings').textContent = purchaseListings.length;
+    document.getElementById('stat-open').textContent = openPurchase;
+    document.getElementById('stat-savings').textContent = '€225k-€304k';
+    document.getElementById('stat-listings-label').textContent = 'Homes to Buy';
+    document.getElementById('stat-open-label').textContent = 'Open Now';
+    document.getElementById('stat-savings-label').textContent = 'Price Range';
   } else {
     document.getElementById('stat-listings-label').textContent = 'Total Listings';
     document.getElementById('stat-open-label').textContent = 'Open Now';
@@ -393,6 +401,7 @@ function switchTab(tab) {
   // Show/hide sections
   const costRentalSections = ['filter-bar', 'listings', 'map-section', 'comparison', 'daft-comparison', 'hap-limits', 'calculator', 'compare-rent', 'checklist-section', 'eligibility', 'how-it-works', 'providers'];
   const studentSections = ['student-filter-bar', 'student-listings', 'student-checklist-section'];
+  const purchaseSections = ['purchase-filter-bar', 'purchase-listings'];
 
   if (tab === 'cost-rental') {
     costRentalSections.forEach(id => {
@@ -403,7 +412,11 @@ function switchTab(tab) {
       const el = document.getElementById(id);
       if (el) el.style.display = 'none';
     });
-  } else {
+    purchaseSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+  } else if (tab === 'student') {
     costRentalSections.forEach(id => {
       const el = document.getElementById(id);
       if (el) el.style.display = 'none';
@@ -412,13 +425,32 @@ function switchTab(tab) {
       const el = document.getElementById(id);
       if (el) el.style.display = '';
     });
-    // Render student listings if not yet done
+    purchaseSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
     if (studentListings.length === 0) {
-      loadStudentData().then(() => {
-        renderStudentListings(studentListings);
-      });
+      loadStudentData().then(() => renderStudentListings(studentListings));
     } else {
       renderStudentListings(studentListings);
+    }
+  } else if (tab === 'purchase') {
+    costRentalSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    studentSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    purchaseSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = '';
+    });
+    if (purchaseListings.length === 0) {
+      loadPurchaseData().then(() => renderPurchaseListings(purchaseListings));
+    } else {
+      renderPurchaseListings(purchaseListings);
     }
   }
 }
@@ -991,3 +1023,86 @@ function updateStudentChecklistProgress() {
 }
 
 document.addEventListener('DOMContentLoaded', initStudentChecklist);
+
+
+// === AFFORDABLE PURCHASE TAB ===
+let purchaseListings = [];
+
+async function loadPurchaseData() {
+  try {
+    const res = await fetch('data/purchase.json');
+    const data = await res.json();
+    purchaseListings = data.listings;
+    purchaseListings.sort((a, b) => {
+      const order = { open: 0, coming_soon: 1, closed: 2 };
+      return (order[a.status] || 2) - (order[b.status] || 2);
+    });
+  } catch (err) {
+    console.error('Failed to load purchase data:', err);
+  }
+}
+
+function renderPurchaseListings(items) {
+  const grid = document.getElementById('purchase-grid');
+  if (!grid) return;
+
+  grid.innerHTML = items.map(listing => {
+    const badgeClass = listing.status === 'open' ? 'badge-open' : 'badge-coming_soon';
+    const priceDisplay = listing.price ? '\u20ac' + listing.price.toLocaleString() : 'TBC';
+    const dateInfo = listing.date_closes
+      ? '<div class="card-countdown">Applications close: ' + listing.date_closes + '</div>'
+      : listing.date_opens
+      ? '<div class="card-countdown soon">Applications open: ' + listing.date_opens + '</div>'
+      : '';
+
+    return '<div class="listing-card status-' + listing.status + '">' +
+      '<a href="' + listing.url + '" target="_blank" class="card-link">' +
+        '<div class="card-image">' +
+          '<img src="' + listing.image + '" alt="' + listing.name + '" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.classList.add(\'no-image\')">' +
+          '<span class="card-badge ' + badgeClass + '">' + listing.status_text + '</span>' +
+        '</div>' +
+        '<div class="card-body">' +
+          '<div class="card-provider">AffordableHomes.ie</div>' +
+          '<div class="card-name">' + listing.name + '</div>' +
+          '<div class="card-location">\ud83d\udccd ' + listing.location + '</div>' +
+          dateInfo +
+          '<div class="card-details">' +
+            '<div class="card-rent" style="color:#1e40af;">' + priceDisplay + '</div>' +
+            '<div class="card-beds">\ud83d\udecf\ufe0f ' + listing.bedrooms + '</div>' +
+          '</div>' +
+          (listing.availability ? '<div class="card-notes">\ud83c\udfe0 ' + listing.availability + ' available</div>' : '') +
+          (listing.ber_rating ? '<span class="ber-badge ' + listing.ber_rating.toLowerCase() + '">' + listing.ber_rating + '</span>' : '') +
+        '</div>' +
+      '</a>' +
+    '</div>';
+  }).join('');
+
+  var countEl = document.getElementById('purchase-visible-count');
+  if (countEl) countEl.textContent = items.length;
+}
+
+function filterPurchaseListings() {
+  var status = document.getElementById('purchase-filter-status').value;
+  var county = document.getElementById('purchase-filter-county').value;
+  var price = document.getElementById('purchase-filter-price').value;
+  var beds = document.getElementById('purchase-filter-beds').value;
+
+  var filtered = purchaseListings.filter(function(l) {
+    if (status !== 'all' && l.status !== status) return false;
+    if (county !== 'all' && l.county !== county) return false;
+    if (price !== 'all' && l.price && l.price > parseInt(price)) return false;
+    if (beds !== 'all' && l.bedrooms && l.bedrooms.indexOf(beds) === -1) return false;
+    return true;
+  });
+
+  renderPurchaseListings(filtered);
+}
+
+// Add purchase filter listeners
+document.addEventListener('DOMContentLoaded', function() {
+  loadPurchaseData();
+  ['purchase-filter-status', 'purchase-filter-county', 'purchase-filter-price', 'purchase-filter-beds'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('change', filterPurchaseListings);
+  });
+});
