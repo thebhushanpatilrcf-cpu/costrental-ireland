@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T12:59:41Z",
+  "last_updated": "2026-07-31T18:11:36Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -467,6 +467,42 @@
       "property_type": "apartment",
       "ber_rating": "A2",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "lda-cookstown-gateway-cookstown-dublin-24-5",
+      "provider": "LDA",
+      "name": "Cookstown Gateway",
+      "location": "Cookstown, Dublin 24",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1225,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "Overlooking Cookstown Luas Stop and within walking distance of Tallaght University Hospital and The Square Shopping Centre, the location is well served by Dublin Bus, accessible to the M50 and near to a number of employment hubs, including Citywest B",
+      "amenities": [],
+      "parking": false,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/cookstown-gateway-cookstown-dublin-24-5",
+      "image": "https://lda.ie/uploads/images/The-Gateway-Info-Card_2024-06-24-102638_gcny.png",
+      "provider_url": "https://lda.ie"
+    },
+    {
+      "id": "affordable-carrigmorewoods3",
+      "provider": "AffordableHomes.ie",
+      "name": "Carrigmore Woods",
+      "location": "Citywest, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1395,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/carrigmorewoods3/",
+      "image": "https://affordablehomes.ie/uploads/images/CW1.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "07 August 2026 at 14:00"
     }
   ],
   "providers": [
