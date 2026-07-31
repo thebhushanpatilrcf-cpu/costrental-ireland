@@ -447,11 +447,14 @@ function switchTab(tab) {
       const el = document.getElementById(id);
       if (el) el.style.display = '';
     });
-    if (purchaseListings.length === 0) {
-      loadPurchaseData().then(() => renderPurchaseListings(purchaseListings));
-    } else {
-      renderPurchaseListings(purchaseListings);
-    }
+    // Force render after making sections visible
+    setTimeout(() => {
+      if (purchaseListings.length === 0) {
+        loadPurchaseData().then(() => renderPurchaseListings(purchaseListings));
+      } else {
+        renderPurchaseListings(purchaseListings);
+      }
+    }, 50);
   }
 }
 
