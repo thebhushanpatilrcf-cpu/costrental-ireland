@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T12:30:00Z",
+  "last_updated": "2026-07-31T12:59:41Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -44,10 +44,10 @@
       "location": "Citywest, Dublin 24",
       "county": "Dublin",
       "bedrooms": "Various",
-      "rent": null,
+      "rent": 1395,
       "status": "coming_soon",
       "status_text": "Launching Soon",
-      "description": "New cost rental development in Citywest, Dublin 24. Details to be announced. This exciting new development will offer modern apartments in a well-connected location close to the Citywest Business Park and Luas line.",
+      "description": "Cost rental 1-bed apartments in Citywest, Dublin 24. Applications open 31 July 2026 at 14:00. BER A2.",
       "amenities": [
         "Luas",
         "Business Park"
@@ -66,7 +66,8 @@
       ],
       "market_rent": 2800,
       "property_type": "apartment",
-      "ber_rating": "A2"
+      "ber_rating": "A2",
+      "date_opens": "2026-07-31"
     },
     {
       "id": "lda-crossings-adamstown",
@@ -415,6 +416,57 @@
       "market_rent": 2500,
       "property_type": "apartment",
       "ber_rating": "A2"
+    },
+    {
+      "id": "affordable-stoneview1",
+      "provider": "AffordableHomes.ie",
+      "name": "Stoneview",
+      "location": "Walkinstown, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1670,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "1-bed apartments in Walkinstown, Dublin 12. Applications open 5 August 2026 at 09:00. BER A2.",
+      "amenities": [
+        "Bus",
+        "Shops",
+        "Luas Nearby"
+      ],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/stoneview1/",
+      "images": [
+        "https://affordablehomes.ie/uploads/images/Stoneview%20External%20(2).jpg"
+      ],
+      "date_opens": "2026-08-05",
+      "property_type": "apartment",
+      "ber_rating": "A2",
+      "market_rent": 2400,
+      "provider_url": "https://affordablehomes.ie"
+    },
+    {
+      "id": "cluid-stoneview-aug26",
+      "provider": "Cluid Housing",
+      "name": "Stoneview (Cluid)",
+      "location": "Stoneview, Walkinstown, Dublin 12",
+      "county": "Dublin",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "Cluid Housing cost rental development in Walkinstown, Dublin 12. Launching soon.",
+      "amenities": [
+        "Bus",
+        "Shops"
+      ],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/stoneview-aug26/",
+      "images": [
+        "https://www.cluid.ie/wp-content/uploads/2025/04/stoneview-external-3-540x340.jpg"
+      ],
+      "property_type": "apartment",
+      "ber_rating": "A2",
+      "provider_url": "https://www.cluid.ie"
     }
   ],
   "providers": [
