@@ -1,0 +1,495 @@
+{
+  "last_updated": "2026-07-30T12:30:00Z",
+  "listings": [
+    {
+      "id": "lda-cookstown-gateway-jul2026",
+      "provider": "LDA",
+      "name": "Cookstown Gateway",
+      "location": "Cookstown, Dublin 24",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1225,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "One-bedroom apartments overlooking Cookstown Luas Stop. Walking distance to Tallaght University Hospital and The Square Shopping Centre. Well served by Dublin Bus, Luas Red Line, accessible to M50. Near Citywest Business Campus and Grange Castle Business Park. Registrations close 12:30 on Thursday 06 August 2026.",
+      "amenities": [
+        "Luas",
+        "Bus",
+        "Hospital",
+        "Shopping Centre",
+        "M50 Access"
+      ],
+      "parking": false,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/cookstown-gateway-cookstown-dublin-24-5",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-07-15",
+      "date_closes": "2026-08-06",
+      "coordinates": {
+        "lat": 53.2876,
+        "lng": -6.3714
+      },
+      "images": [
+        "https://lda.ie/uploads/images/The-Gateway-Info-Card_2024-06-24-102638_gcny.png"
+      ],
+      "market_rent": 2200,
+      "min_income": 42000,
+      "virtual_tour": "https://my.matterport.com/show/?m=SFR5LsgKwwJ",
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "tuath-carrigmore-woods",
+      "provider": "Tuath Housing",
+      "name": "Carrigmore Woods",
+      "location": "Citywest, Dublin 24",
+      "county": "Dublin",
+      "bedrooms": "Various",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "New cost rental development in Citywest, Dublin 24. Details to be announced. This exciting new development will offer modern apartments in a well-connected location close to the Citywest Business Park and Luas line.",
+      "amenities": [
+        "Luas",
+        "Business Park"
+      ],
+      "parking": null,
+      "url": "https://tuathhousing.ie/properties/carrigmore-woods/",
+      "provider_url": "https://tuathhousing.ie",
+      "date_opened": null,
+      "date_closes": null,
+      "coordinates": {
+        "lat": 53.278,
+        "lng": -6.419
+      },
+      "images": [
+        "https://affordablehomes.ie/uploads/images/CW1.jpg"
+      ],
+      "market_rent": 2800,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "lda-crossings-adamstown",
+      "provider": "LDA",
+      "name": "The Crossings",
+      "location": "Adamstown, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "Studio, 1-3 Bed",
+      "rent": 1024,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Located on Station Road, just a short stroll from Adamstown Train Station. Includes a vibrant new retail hub offering everyday essentials, dining options, and leisure facilities.",
+      "amenities": [
+        "Train Station",
+        "Retail Hub",
+        "Dining"
+      ],
+      "parking": null,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/the-crossings-adamstown-co-dublin-3",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-06-01",
+      "date_closes": "2026-07-01",
+      "coordinates": {
+        "lat": 53.345,
+        "lng": -6.452
+      },
+      "images": [
+        "https://lda.ie/uploads/images/The-Crossings-Scheme-Picture-Card_2025-12-19-093318_fqsa.png"
+      ],
+      "market_rent": 2500,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "lda-shanganagh-castle",
+      "provider": "LDA",
+      "name": "Shanganagh Castle Estate",
+      "location": "Shankill, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "Various",
+      "rent": 1175,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Shankill offers peaceful village life while Dublin city is a short commute away. N11 and M50 nearby, well-served by public transport. Beautiful coastal setting with views of the Dublin Mountains.",
+      "amenities": [
+        "N11",
+        "M50",
+        "Bus",
+        "Village"
+      ],
+      "parking": false,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/shanganagh-castle-estate-shankill-co-dublin-4",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-05-01",
+      "date_closes": "2026-06-15",
+      "coordinates": {
+        "lat": 53.2275,
+        "lng": -6.12
+      },
+      "images": [
+        "https://lda.ie/uploads/images/Shanganagh-D18-Info-Card.png"
+      ],
+      "market_rent": 2600,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "lda-dun-oir-kilternan",
+      "provider": "LDA",
+      "name": "Dun Óir",
+      "location": "Kilternan, Dublin 18",
+      "county": "Dublin",
+      "bedrooms": "1-2 Bed",
+      "rent": 1300,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Situated off Glenamuck Road connecting Enniskerry, Kilternan and Stepaside with the M50 and the city centre. Close to the Dublin Mountains with excellent recreational facilities nearby.",
+      "amenities": [
+        "M50",
+        "Mountains",
+        "Village"
+      ],
+      "parking": null,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/dun-oir-kilternan-dublin-18-4",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-04-01",
+      "date_closes": "2026-05-15",
+      "coordinates": {
+        "lat": 53.24,
+        "lng": -6.18
+      },
+      "images": [
+        "https://lda.ie/uploads/images/Dun-Oir-Info-Card.png"
+      ],
+      "market_rent": 2700,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "lda-cooper-square-phase4",
+      "provider": "LDA",
+      "name": "Cooper Square (Phase 4)",
+      "location": "Seven Mills, Dublin 22",
+      "county": "Dublin",
+      "bedrooms": "2-3 Bed",
+      "rent": 1500,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Two-bedroom and three-bedroom apartments. Limited parking available for an additional monthly charge. Well located with access to Luas and Dublin Bus services.",
+      "amenities": [
+        "Bus",
+        "Luas Access"
+      ],
+      "parking": true,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/cooper-square-seven-mills-dublin-22-phase-4",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-03-01",
+      "date_closes": "2026-04-15",
+      "coordinates": {
+        "lat": 53.32,
+        "lng": -6.39
+      },
+      "images": [
+        "https://lda.ie/uploads/images/Cooper-Square-Scheme-Picture-Card-1_2025-11-17-115433_pgwd.png"
+      ],
+      "market_rent": 3200,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "lda-barnwell-point",
+      "provider": "LDA",
+      "name": "Barnwell Point",
+      "location": "Hansfield, Dublin 15",
+      "county": "Dublin",
+      "bedrooms": "Various",
+      "rent": null,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Adjacent to Hansfield Train Station and a short stroll from Ongar Village. Short distance south of M3 Motorway. Excellent connectivity to Dublin city centre via rail.",
+      "amenities": [
+        "Train Station",
+        "M3",
+        "M50",
+        "Village"
+      ],
+      "parking": null,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/barnwell-point-hansfield-dublin-15-2",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-02-01",
+      "date_closes": "2026-03-15",
+      "coordinates": {
+        "lat": 53.385,
+        "lng": -6.435
+      },
+      "images": [
+        "https://lda.ie/uploads/images/Barnwell-1.jpg"
+      ],
+      "market_rent": 2800,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "lda-mills-castletroy",
+      "provider": "LDA",
+      "name": "The Mills",
+      "location": "Castletroy, Co. Limerick",
+      "county": "Limerick",
+      "bedrooms": "1 Bed",
+      "rent": 990,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "One-bedroom apartments in Castletroy, Co. Limerick. Close to University of Limerick and well served by local bus routes. Ideal for young professionals and students.",
+      "amenities": [
+        "University",
+        "Bus"
+      ],
+      "parking": null,
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental/the-mills-castletroy-co-limerick-2",
+      "provider_url": "https://lda.ie",
+      "date_opened": "2026-01-15",
+      "date_closes": "2026-02-28",
+      "coordinates": {
+        "lat": 52.674,
+        "lng": -8.556
+      },
+      "images": [
+        "https://lda.ie/uploads/images/Castletroy-Limerick-Info-Card.png"
+      ],
+      "market_rent": 1800,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "respond-granary-swords",
+      "provider": "Respond",
+      "name": "The Granary",
+      "location": "Swords, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "3 Bed",
+      "rent": 1654,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "3 bedroom houses in Swords. Excellent location with easy access to Dublin Airport, the M1 motorway, and Swords town centre with its shopping and leisure facilities.",
+      "amenities": [
+        "Bus",
+        "Shopping",
+        "M1 Access"
+      ],
+      "parking": null,
+      "url": "https://www.respond.ie/properties/mooretown-swords/",
+      "provider_url": "https://www.respond.ie",
+      "date_opened": "2026-06-01",
+      "date_closes": "2026-07-01",
+      "coordinates": {
+        "lat": 53.46,
+        "lng": -6.22
+      },
+      "images": [
+        "https://www.respond.ie/wp-content/uploads/2024/05/Moortown_1-scaled.jpg"
+      ],
+      "market_rent": 3500,
+      "property_type": "house",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "respond-woodside-stepaside",
+      "provider": "Respond",
+      "name": "Woodside",
+      "location": "Enniskerry Road, Stepaside, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "2 Bed",
+      "rent": 1294,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "2 bedroom home in Woodside, Stepaside. Beautiful location close to the Dublin Mountains with easy access to the M50 and Luas Green Line.",
+      "amenities": [
+        "Luas",
+        "Mountains"
+      ],
+      "parking": null,
+      "url": "https://www.respond.ie/properties/woodside-enniskerry-road-stepaside-co-dublin/",
+      "provider_url": "https://www.respond.ie",
+      "date_opened": "2026-06-15",
+      "date_closes": "2026-07-15",
+      "coordinates": {
+        "lat": 53.25,
+        "lng": -6.22
+      },
+      "images": [
+        "https://www.respond.ie/wp-content/uploads/2024/05/Woodside-scaled.jpg"
+      ],
+      "market_rent": 2900,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "respond-griffin-point",
+      "provider": "Respond",
+      "name": "Griffin Point",
+      "location": "Dublin 13",
+      "county": "Dublin",
+      "bedrooms": "1-2 Bed",
+      "rent": null,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "64 cost rental units — mix of 1 and 2 bedroom apartments. Coastal location in Dublin 13 with excellent access to DART services and local amenities.",
+      "amenities": [
+        "Coastal",
+        "DART"
+      ],
+      "parking": null,
+      "url": "https://www.respond.ie/properties/griffin-point/",
+      "provider_url": "https://www.respond.ie",
+      "date_opened": "2026-05-01",
+      "date_closes": "2026-06-01",
+      "coordinates": {
+        "lat": 53.39,
+        "lng": -6.18
+      },
+      "images": [
+        "https://www.respond.ie/wp-content/uploads/2024/03/Griffin-Point-scaled.jpg"
+      ],
+      "market_rent": 2600,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "tuath-woodside-rise",
+      "provider": "Tuath Housing",
+      "name": "Woodside Rise",
+      "location": "Enniskerry Rd, Dublin 18",
+      "county": "Dublin",
+      "bedrooms": "Various",
+      "rent": null,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Cost rental development on Enniskerry Road, Dublin 18. Modern apartments in a scenic location close to the Dublin Mountains.",
+      "amenities": [
+        "Bus",
+        "Mountains"
+      ],
+      "parking": null,
+      "url": "https://tuathhousing.ie/properties/woodside-rise/",
+      "provider_url": "https://tuathhousing.ie",
+      "date_opened": "2026-05-01",
+      "date_closes": "2026-06-15",
+      "coordinates": {
+        "lat": 53.25,
+        "lng": -6.22
+      },
+      "images": [
+        "https://tuathhousing.ie/wp-content/uploads/2024/03/woodside-rise.jpg"
+      ],
+      "market_rent": 2700,
+      "property_type": "duplex",
+      "ber_rating": "A2"
+    },
+    {
+      "id": "tuath-deverdon-place",
+      "provider": "Tuath Housing",
+      "name": "DeVerdon Place",
+      "location": "Malahide Road, Dublin 17",
+      "county": "Dublin",
+      "bedrooms": "Various",
+      "rent": null,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Cost rental development on Malahide Road. Well connected with bus and DART services. Close to local shops, schools, and parks.",
+      "amenities": [
+        "Bus",
+        "DART Nearby"
+      ],
+      "parking": null,
+      "url": "https://tuathhousing.ie/properties/deverdon-place/",
+      "provider_url": "https://tuathhousing.ie",
+      "date_opened": "2026-04-01",
+      "date_closes": "2026-05-15",
+      "coordinates": {
+        "lat": 53.385,
+        "lng": -6.2
+      },
+      "images": [
+        "https://tuathhousing.ie/wp-content/uploads/2024/03/deverdon-place.jpg"
+      ],
+      "market_rent": 2500,
+      "property_type": "apartment",
+      "ber_rating": "A2"
+    }
+  ],
+  "providers": [
+    {
+      "id": "lda",
+      "name": "Land Development Agency",
+      "url": "https://lda.ie/affordable-homes/lda-cost-rental",
+      "logo": "lda",
+      "description": "State body established to manage public land for housing delivery"
+    },
+    {
+      "id": "tuath",
+      "name": "Tuath Housing",
+      "url": "https://tuathhousing.ie/cost-rental/",
+      "logo": "tuath",
+      "description": "Approved Housing Body providing social and cost rental homes"
+    },
+    {
+      "id": "respond",
+      "name": "Respond Housing",
+      "url": "https://www.respond.ie/cost-rental/",
+      "logo": "respond",
+      "description": "National housing association delivering affordable housing solutions"
+    },
+    {
+      "id": "cluid",
+      "name": "Clúid Housing",
+      "url": "https://www.cluid.ie/cost-rental/",
+      "logo": "cluid",
+      "description": "Ireland's largest approved housing body"
+    },
+    {
+      "id": "dcc",
+      "name": "Dublin City Council",
+      "url": "https://www.dublincity.ie/housing/housing-supports/affordable-housing-initiatives/cost-rental-scheme",
+      "logo": "dcc",
+      "description": "Local authority delivering cost rental in Dublin city"
+    },
+    {
+      "id": "affordable",
+      "name": "AffordableHomes.ie",
+      "url": "https://affordablehomes.ie/",
+      "logo": "affordable",
+      "description": "Government portal for all affordable housing schemes"
+    }
+  ],
+  "eligibility": {
+    "max_income_dublin": 66000,
+    "max_income_elsewhere": 59000,
+    "max_rent_percentage": 35,
+    "requirements": [
+      "Net household income below €66,000 (Dublin) / €59,000 (elsewhere)",
+      "Not receiving social housing supports (HAP, Rent Supplement)",
+      "Do not own a property in Ireland or elsewhere",
+      "Household size matches property size",
+      "Currently residing in Ireland",
+      "Can afford rent (max 35% of net income)"
+    ]
+  },
+  "market_comparison": {
+    "studio": {
+      "cost_rental": 950,
+      "market": 2000
+    },
+    "one_bed": {
+      "cost_rental": 1200,
+      "market": 2250
+    },
+    "two_bed": {
+      "cost_rental": 1350,
+      "market": 2850
+    },
+    "three_bed": {
+      "cost_rental": 1600,
+      "market": 3400
+    }
+  }
+}

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9636330397610882"
+     crossorigin="anonymous"></script>
+  <title>Cost Rental Ireland — Find Affordable Homes Below Market Rent</title>
+  <meta name="description" content="All Irish cost rental listings in one place. Find homes 40-60% below market rent from LDA, Tuath, Respond, Clúid. Updated hourly. Applications open now.">
+  <meta name="keywords" content="cost rental Ireland, affordable housing Ireland, LDA cost rental, below market rent Dublin, Tuath housing, Respond housing, affordable rent Ireland 2026">
+  <meta name="author" content="CostRental.ie">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cost Rental Ireland — Homes 40-60% Below Market Rent">
+  <meta property="og:description" content="Browse all cost rental properties in Ireland. Applications open now. Rent from €990/month.">
+  <meta property="og:url" content="https://regal-scone-69e00e.netlify.app/">
+  <meta property="og:image" content="https://lda.ie/uploads/images/The-Gateway-Info-Card_2024-06-24-102638_gcny.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cost Rental Ireland — Affordable Homes">
+  <meta name="twitter:description" content="All cost rental listings in one place. Homes 40-60% below market rent.">
+  <meta name="twitter:image" content="https://lda.ie/uploads/images/The-Gateway-Info-Card_2024-06-24-102638_gcny.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Plausible Analytics (privacy-friendly, no cookies) -->
+  <script defer data-domain="costrentalhomes.netlify.app" src="https://plausible.io/js/script.js"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9636330397610882" crossorigin="anonymous"></script>
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#169B62">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/icon-192.png">
+</head>
+<body>
+  <!-- Dark mode init (before paint) -->
+  <script>
+    if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <div class="logo-icon">🏠</div>
+        CostRental.ie
+      </a>
+      <nav class="nav">
+        <a href="#listings">Listings</a>
+        <a href="#map-section">Map</a>
+        <a href="#calculator">Calculator</a>
+        <a href="pages/faq.html">FAQ</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="#saved-section">❤️ Saved</a>
+        <a href="#notify" class="nav-cta">Get Notified</a>
+      </nav>
+      <button class="mobile-menu" onclick="document.querySelector('.nav').classList.toggle('nav-open')">☰</button>
+      <button class="dark-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- Trust Badges -->
+  <div class="trust-bar">
+    <div class="container">
+      <span class="trust-badge">✓ Verified Listings</span>
+      <span class="trust-badge">✓ Updated Hourly</span>
+      <span class="trust-badge">✓ Official Sources Only</span>
+      <span class="trust-badge">✓ Free to Use</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Find Your Affordable Home</h1>
+      <p>Browse cost rental properties and student accommodation across Ireland. Rent well below market rates.</p>
+
+      <!-- Tab Toggle -->
+      <div class="tab-toggle">
+        <button class="tab-btn active" onclick="switchTab('cost-rental')">🏠 Cost Rental</button>
+        <button class="tab-btn" onclick="switchTab('student')">🎓 Student Accommodation</button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number" id="stat-listings">13</div>
+          <div class="hero-stat-label" id="stat-listings-label">Total Listings</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number" id="stat-open">1</div>
+          <div class="hero-stat-label" id="stat-open-label">Open Now</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number" id="stat-savings">€1,200</div>
+          <div class="hero-stat-label" id="stat-savings-label">Avg. Monthly Savings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar (Cost Rental) -->
+  <div class="filter-bar" id="filter-bar">
+    <div class="container">
+      <div class="filter-group">
+        <label>Status</label>
+        <select class="filter-select" id="filter-status">
+          <option value="all">All Statuses</option>
+          <option value="saved">❤️ My Saved</option>
+          <option value="open">Open</option>
+          <option value="coming_soon">Coming Soon</option>
+          <option value="closed">Closed</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Location</label>
+        <select class="filter-select" id="filter-location">
+          <option value="all">All Locations</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Bedrooms</label>
+        <select class="filter-select" id="filter-bedrooms">
+          <option value="all">Any</option>
+          <option value="Studio">Studio</option>
+          <option value="1">1 Bed</option>
+          <option value="2">2 Bed</option>
+          <option value="3">3 Bed</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Max Rent</label>
+        <select class="filter-select" id="filter-price">
+          <option value="all">Any Price</option>
+          <option value="1000">Under €1,000</option>
+          <option value="1200">Under €1,200</option>
+          <option value="1400">Under €1,400</option>
+          <option value="1600">Under €1,600</option>
+          <option value="2000">Under €2,000</option>
+        </select>
+      </div>
+      <div class="filter-count">
+        Showing <strong id="visible-count">13</strong> properties
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter Bar (Student) - hidden by default -->
+  <div class="filter-bar" id="student-filter-bar" style="display:none;">
+    <div class="container">
+      <div class="filter-group">
+        <label>Type</label>
+        <select class="filter-select" id="student-filter-type">
+          <option value="all">All Types</option>
+          <option value="On-Campus">On-Campus</option>
+          <option value="Private">Private Halls</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>City</label>
+        <select class="filter-select" id="student-filter-city">
+          <option value="all">All Cities</option>
+          <option value="Dublin">Dublin</option>
+          <option value="Cork">Cork</option>
+          <option value="Galway">Galway</option>
+          <option value="Limerick">Limerick</option>
+          <option value="Kildare">Kildare</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Max Per Week</label>
+        <select class="filter-select" id="student-filter-price">
+          <option value="all">Any Price</option>
+          <option value="150">Under €150/wk</option>
+          <option value="200">Under €200/wk</option>
+          <option value="250">Under €250/wk</option>
+          <option value="300">Under €300/wk</option>
+          <option value="350">Under €350/wk</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Status</label>
+        <select class="filter-select" id="student-filter-status">
+          <option value="all">All</option>
+          <option value="open">Open / Available</option>
+          <option value="closed">Closed / Waitlist</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Sort</label>
+        <select class="filter-select" id="student-filter-sort">
+          <option value="status">Open First</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="name">Name A-Z</option>
+        </select>
+      </div>
+      <div class="filter-count">
+        Showing <strong id="student-visible-count">12</strong> accommodations
+      </div>
+    </div>
+  </div>
+
+  <!-- Listings (Cost Rental) -->
+  <section class="section" id="listings">
+    <div class="container">
+      <h2 class="section-title">Available Properties</h2>
+      <p class="section-subtitle">Cost rental homes across Ireland — open applications listed first</p>
+      <div class="listings-grid" id="listings-grid"></div>
+    </div>
+  </section>
+
+  <!-- Listings (Student) - hidden by default -->
+  <section class="section" id="student-listings" style="display:none;">
+    <div class="container">
+      <h2 class="section-title">🎓 Student Accommodation</h2>
+      <p class="section-subtitle">On-campus and private student housing across Ireland</p>
+      <div class="listings-grid" id="student-grid"></div>
+    </div>
+  </section>
+
+  <!-- Student Checklist - hidden by default -->
+  <section class="section" id="student-checklist-section" style="display:none;">
+    <div class="container">
+      <h2 class="section-title">📋 Student Accommodation Checklist</h2>
+      <p class="section-subtitle">Documents you'll need when booking accommodation</p>
+      <div class="checklist-card" id="student-checklist-card">
+        <div class="checklist-progress">
+          <div class="checklist-bar"><div class="checklist-bar-fill" id="student-checklist-bar-fill"></div></div>
+          <span id="student-checklist-count">0/6 ready</span>
+        </div>
+        <div class="checklist-items" id="student-checklist-items"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section map-section" id="map-section">
+    <div class="container">
+      <h2 class="section-title">Property Map</h2>
+      <p class="section-subtitle">Explore all cost rental locations across Ireland</p>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section comparison-section" id="comparison">
+    <div class="container">
+      <h2 class="section-title">Cost Rental vs Market Rent</h2>
+      <p class="section-subtitle">See how much you could save with cost rental compared to market rates</p>
+      <div class="chart-grid" id="chart-grid"></div>
+    </div>
+  </section>
+
+  <!-- Daft Comparison by Area -->
+  <section class="section" id="daft-comparison">
+    <!-- Ad Zone -->
+    <div class="ad-zone"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9636330397610882" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+    <div class="container">
+      <h2 class="section-title">Savings by Area (vs Daft.ie Market Rent)</h2>
+      <p class="section-subtitle">Real savings based on Daft.ie Q2 2026 rental data</p>
+      <div class="area-comparison-grid" id="area-comparison-grid"></div>
+    </div>
+  </section>
+
+  <!-- HAP Limits -->
+  <section class="section" id="hap-limits" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">HAP Limits by County (2026)</h2>
+      <p class="section-subtitle">Housing Assistance Payment monthly limits — cost rental is for those above HAP thresholds</p>
+      <div style="overflow-x: auto;">
+        <table class="hap-table" id="hap-table">
+          <thead>
+            <tr><th>County</th><th>Single</th><th>Couple</th><th>Couple + 1 Child</th><th>Couple + 2 Children</th></tr>
+          </thead>
+          <tbody id="hap-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">The cost rental application process in 5 simple steps</p>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">🔍</div>
+          <h4>Find a Property</h4>
+          <p>Browse available cost rental developments and check eligibility criteria</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">✅</div>
+          <h4>Check Eligibility</h4>
+          <p>Ensure your household income is below the threshold and you meet all criteria</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">📝</div>
+          <h4>Apply Online</h4>
+          <p>Submit your application through the provider's website during the open period</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-icon">🎲</div>
+          <h4>Lottery Selection</h4>
+          <p>If oversubscribed, a random lottery determines allocation. You'll be notified of the outcome</p>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-icon">🔑</div>
+          <h4>Move In</h4>
+          <p>Sign your tenancy agreement and collect the keys to your new affordable home</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Affordability Calculator -->
+  <section class="section calculator-section" id="calculator">
+    <div class="container">
+      <h2 class="section-title">💶 Affordability Calculator</h2>
+      <p class="section-subtitle">Enter your household income to see what you could afford and how much you'd save</p>
+      <div class="calculator-card">
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label for="calc-income">Net Annual Household Income</label>
+            <div class="input-with-prefix">
+              <span>€</span>
+              <input type="number" id="calc-income" placeholder="e.g. 45000" min="0" max="100000" step="1000">
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="calc-location">Location</label>
+            <select id="calc-location">
+              <option value="dublin">Dublin</option>
+              <option value="elsewhere">Outside Dublin</option>
+            </select>
+          </div>
+          <button class="calc-btn" onclick="calculateAffordability()">Calculate</button>
+        </div>
+        <div class="calc-results" id="calc-results" style="display:none;">
+          <div class="calc-result-grid">
+            <div class="calc-result-item">
+              <div class="calc-label">Your max affordable rent</div>
+              <div class="calc-value" id="calc-max-rent">—</div>
+              <div class="calc-note">35% of net income</div>
+            </div>
+            <div class="calc-result-item">
+              <div class="calc-label">Eligible?</div>
+              <div class="calc-value" id="calc-eligible">—</div>
+              <div class="calc-note" id="calc-eligible-note"></div>
+            </div>
+            <div class="calc-result-item">
+              <div class="calc-label">Avg. saving vs market rent</div>
+              <div class="calc-value" id="calc-saving">—</div>
+              <div class="calc-note">Per year</div>
+            </div>
+          </div>
+          <div class="calc-matching" id="calc-matching"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare My Rent Tool -->
+  <section class="section" id="compare-rent" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">🏷️ Compare My Current Rent</h2>
+      <p class="section-subtitle">See how much you'd save if you switched to cost rental</p>
+      <div class="calculator-card">
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label for="my-rent">What you currently pay</label>
+            <div class="input-with-prefix">
+              <span>€</span>
+              <input type="number" id="my-rent" placeholder="e.g. 1800" min="0" max="5000" step="50">
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="my-area">Your area</label>
+            <select id="my-area">
+              <option value="dublin">Dublin</option>
+              <option value="cork">Cork</option>
+              <option value="galway">Galway</option>
+              <option value="limerick">Limerick</option>
+              <option value="kildare">Kildare</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button class="calc-btn" onclick="compareMyRent()">Compare</button>
+        </div>
+        <div class="calc-results" id="compare-results" style="display:none;">
+          <div class="calc-result-grid">
+            <div class="calc-result-item">
+              <div class="calc-label">Your current rent</div>
+              <div class="calc-value" id="compare-current">—</div>
+              <div class="calc-note">Per month</div>
+            </div>
+            <div class="calc-result-item">
+              <div class="calc-label">Avg cost rental in your area</div>
+              <div class="calc-value" id="compare-costrental" style="color: var(--primary);">—</div>
+              <div class="calc-note">Per month</div>
+            </div>
+            <div class="calc-result-item">
+              <div class="calc-label">You'd save</div>
+              <div class="calc-value" id="compare-saving">—</div>
+              <div class="calc-note" id="compare-annual">Per year</div>
+            </div>
+          </div>
+          <div id="compare-context" style="margin-top: 16px; font-size: 0.85rem; color: var(--gray-600); text-align: center;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Document Checklist -->
+  <section class="section" id="checklist-section">
+    <div class="container">
+      <h2 class="section-title">📋 Application Document Checklist</h2>
+      <p class="section-subtitle">Track what you have ready — saves in your browser</p>
+      <div class="checklist-card" id="checklist-card">
+        <div class="checklist-progress">
+          <div class="checklist-bar"><div class="checklist-bar-fill" id="checklist-bar-fill"></div></div>
+          <span id="checklist-count">0/9 ready</span>
+        </div>
+        <div class="checklist-items" id="checklist-items"></div>
+        <button class="calc-btn" onclick="resetChecklist()" style="margin-top:16px;background:#dc2626;">Reset All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility -->
+  <section class="section eligibility-section" id="eligibility">
+    <div class="container">
+      <h2 class="section-title">Eligibility Requirements</h2>
+      <p class="section-subtitle">Check if you qualify for cost rental housing in Ireland</p>
+      <div class="eligibility-grid">
+        <div class="eligibility-card">
+          <h3>Requirements</h3>
+          <ul class="eligibility-list" id="eligibility-list"></ul>
+        </div>
+        <div class="eligibility-card">
+          <h3>Income Limits</h3>
+          <div class="income-highlight" style="margin-bottom: 16px;">
+            <div class="amount">€66,000</div>
+            <div class="label">Maximum net income — Dublin</div>
+          </div>
+          <div class="income-highlight">
+            <div class="amount">€59,000</div>
+            <div class="label">Maximum net income — Rest of Ireland</div>
+          </div>
+          <p style="margin-top: 16px; font-size: 0.85rem; color: var(--gray-500); text-align: center;">
+            Rent must not exceed 35% of your net household income
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Providers -->
+  <section class="section providers-section" id="providers">
+    <div class="container">
+      <h2 class="section-title">Cost Rental Providers</h2>
+      <p class="section-subtitle">Approved housing bodies and agencies delivering cost rental homes</p>
+      <div class="providers-grid" id="providers-grid"></div>
+    </div>
+  </section>
+
+  <!-- Notification Signup -->
+  <section class="section notify-section" id="notify">
+    <div class="container">
+      <h2 class="section-title">Get Notified</h2>
+      <p class="section-subtitle">Be the first to know when new cost rental properties become available</p>
+      <form class="notify-form" action="https://formspree.io/f/xpwzgkdl" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Saved Properties -->
+  <section class="section saved-section" id="saved-section">
+    <div class="container">
+      <h2 class="section-title">❤️ My Saved Properties</h2>
+      <p class="section-subtitle">Your favourited listings — saved in your browser</p>
+      <div class="listings-grid" id="saved-grid">
+        <p class="empty-saved" id="empty-saved">No saved properties yet. Click the 🤍 on any listing to save it here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials" style="background: var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title">💬 Success Stories</h2>
+      <p class="section-subtitle">Real people who secured cost rental homes</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"I was paying €2,100 for a 1-bed in Rathmines. Now I pay €1,225 in Cookstown Gateway. That's €10,500 a year back in my pocket."</div>
+          <div class="testimonial-author">— Sarah, Dublin 24</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"Applied for 3 different schemes before I got lucky in the lottery. My advice: apply for everything and have your documents ready."</div>
+          <div class="testimonial-author">— Mark, Seven Mills</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"As a single parent, cost rental gave me the security I needed. Unlimited tenancy means my kids have a stable home."</div>
+          <div class="testimonial-author">— Niamh, Shankill</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>CostRental.ie</h3>
+          <p>An independent resource aggregating all cost rental housing listings in Ireland. We help people find affordable homes through the Government's cost rental scheme.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#listings">All Listings</a>
+          <a href="#eligibility">Eligibility</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#providers">Providers</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="https://affordablehomes.ie/" target="_blank">AffordableHomes.ie</a>
+          <a href="https://lda.ie" target="_blank">LDA</a>
+          <a href="https://www.gov.ie/en/publication/cost-rental/" target="_blank">Gov.ie</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CostRental.ie — Not affiliated with any government body or housing provider</p>
+        <p class="footer-disclaimer">
+          Disclaimer: This is an unofficial aggregation site. All information is gathered from public sources and may not be fully up to date. 
+          Always verify details directly with the relevant housing provider. We do not process applications or guarantee availability.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-banner" id="cookie-banner" style="display:none;">
+    <div class="cookie-text">We use cookies for analytics only. No tracking, no ads. <a href="pages/faq.html">Learn more</a></div>
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="dismissCookies()" style="background:transparent;color:var(--gray-600);">Dismiss</button>
+  </div>
+
+  <!-- Newsletter Popup -->
+  <div class="newsletter-popup" id="newsletter-popup" style="display:none;">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closeNewsletter()">✕</button>
+      <h3>🔔 Never Miss a Listing</h3>
+      <p>Get notified the moment new cost rental applications open. Free, no spam.</p>
+      <form action="https://formspree.io/f/xpwzgkdl" method="POST" class="popup-form">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/map.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
+</body>
+</html>

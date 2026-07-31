@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9636330397610882" crossorigin="anonymous"></script>
+  <title>Property Details — Cost Rental Ireland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9636330397610882" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        CostRental.ie
+      </a>
+      <nav class="nav">
+        <a href="../index.html#listings">Listings</a>
+        <a href="../index.html#map-section">Map</a>
+        <a href="../index.html#how-it-works">How It Works</a>
+        <a href="../index.html#eligibility">Eligibility</a>
+        <a href="../index.html#notify" class="nav-cta">Get Notified</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Listing Hero -->
+  <div class="listing-breadcrumb">
+    <div class="container">
+      <a href="../index.html">Home</a> › <a href="../index.html#listings">Listings</a> › <span id="breadcrumb-name">Property</span>
+    </div>
+  </div>
+  <div class="listing-hero" id="listing-hero">
+    <img id="hero-image" src="" alt="">
+    <div class="listing-hero-overlay">
+      <div class="container">
+        <span class="card-badge" id="hero-badge"></span>
+        <h1 id="hero-title" style="font-size: 2rem; margin-top: 12px;"></h1>
+        <p id="hero-location" style="opacity: 0.9; font-size: 1.1rem;">📍 </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Listing Content -->
+  <section class="listing-content">
+    <div class="container">
+      <div class="listing-grid">
+        <!-- Main Content -->
+        <div class="listing-main">
+          <h2>About This Property</h2>
+          <p id="listing-description"></p>
+
+          <h2 style="margin-top: 32px;">Image Gallery</h2>
+          <div class="gallery-grid" id="gallery-grid"></div>
+
+          <h2 style="margin-top: 32px;">Amenities & Transport</h2>
+          <div class="amenity-tags" id="amenity-tags"></div>
+
+          <h2 style="margin-top: 32px;">Location</h2>
+          <div id="listing-map"></div>
+
+          <h2 style="margin-top: 32px;">Cost vs Market Rent</h2>
+          <div id="listing-comparison" style="margin-top: 16px;"></div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="listing-sidebar">
+          <div class="sidebar-card">
+            <h3>Monthly Rent</h3>
+            <div class="sidebar-rent" id="sidebar-rent">—</div>
+            <p style="font-size: 0.85rem; color: var(--gray-500); margin-top: 8px;">
+              Cost rental — below market rate
+            </p>
+            <a href="#" id="apply-btn" class="btn-primary" target="_blank">
+              Apply Now →
+            </a>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Details</h3>
+            <table style="width: 100%; font-size: 0.9rem;">
+              <tr>
+                <td style="padding: 8px 0; color: var(--gray-500);">Provider</td>
+                <td style="padding: 8px 0; text-align: right; font-weight: 600;" id="detail-provider"></td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: var(--gray-500);">Bedrooms</td>
+                <td style="padding: 8px 0; text-align: right; font-weight: 600;" id="detail-beds"></td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: var(--gray-500);">Status</td>
+                <td style="padding: 8px 0; text-align: right; font-weight: 600;" id="detail-status"></td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: var(--gray-500);">Parking</td>
+                <td style="padding: 8px 0; text-align: right; font-weight: 600;" id="detail-parking"></td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: var(--gray-500);">County</td>
+                <td style="padding: 8px 0; text-align: right; font-weight: 600;" id="detail-county"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Market Comparison</h3>
+            <p id="savings-text" style="font-size: 0.9rem; color: var(--gray-600);"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 CostRental.ie — Not affiliated with any government body or housing provider</p>
+        <p class="footer-disclaimer">
+          Disclaimer: This is an unofficial aggregation site. Always verify details directly with the relevant housing provider.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    async function loadListing() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      if (!id) { window.location.href = '../index.html'; return; }
+
+      const res = await fetch('../data/listings.json');
+      const data = await res.json();
+      const listing = data.listings.find(l => l.id === id);
+      if (!listing) { window.location.href = '../index.html'; return; }
+
+      // Update page title
+      document.title = `${listing.name} — Cost Rental Ireland`;
+      document.getElementById('breadcrumb-name').textContent = listing.name;
+
+      // Hero
+      document.getElementById('hero-image').src = listing.images[0];
+      document.getElementById('hero-image').alt = listing.name;
+      document.getElementById('hero-title').textContent = listing.name;
+      document.getElementById('hero-location').textContent = '📍 ' + listing.location;
+
+      const badge = document.getElementById('hero-badge');
+      badge.textContent = listing.status_text;
+      badge.className = `card-badge badge-${listing.status}`;
+
+      // Description
+      document.getElementById('listing-description').textContent = listing.description;
+
+      // Gallery
+      const gallery = document.getElementById('gallery-grid');
+      gallery.innerHTML = listing.images.map(img =>
+        `<img src="${img}" alt="${listing.name}" loading="lazy">`
+      ).join('');
+
+      // Amenities
+      const tags = document.getElementById('amenity-tags');
+      tags.innerHTML = listing.amenities.map(a =>
+        `<span class="amenity-tag">${a}</span>`
+      ).join('');
+
+      // Sidebar
+      document.getElementById('sidebar-rent').innerHTML = listing.rent
+        ? `€${listing.rent.toLocaleString()} <span>/month</span>`
+        : 'TBC';
+      document.getElementById('apply-btn').href = listing.url;
+      document.getElementById('detail-provider').textContent = listing.provider;
+      document.getElementById('detail-beds').textContent = listing.bedrooms;
+      document.getElementById('detail-status').textContent = listing.status_text;
+      document.getElementById('detail-parking').textContent =
+        listing.parking === true ? 'Yes' : listing.parking === false ? 'No' : 'TBC';
+      document.getElementById('detail-county').textContent = listing.county;
+
+      // Savings
+      if (listing.rent && listing.market_rent) {
+        const savings = listing.market_rent - listing.rent;
+        const pct = Math.round((savings / listing.market_rent) * 100);
+        document.getElementById('savings-text').innerHTML = `
+          You could save <strong style="color: var(--primary);">€${savings.toLocaleString()}/month</strong>
+          (${pct}% below market rate of €${listing.market_rent.toLocaleString()})
+        `;
+
+        // Comparison bar
+        const comp = document.getElementById('listing-comparison');
+        comp.innerHTML = `
+          <div style="background: var(--gray-100); border-radius: 12px; padding: 20px;">
+            <div class="bar-container">
+              <div class="bar-row">
+                <span class="bar-label">Cost Rental</span>
+                <div class="bar-track">
+                  <div class="bar-fill cost-rental" style="width: ${(listing.rent / listing.market_rent) * 100}%">€${listing.rent.toLocaleString()}</div>
+                </div>
+              </div>
+              <div class="bar-row" style="margin-top: 8px;">
+                <span class="bar-label">Market</span>
+                <div class="bar-track">
+                  <div class="bar-fill market" style="width: 100%">€${listing.market_rent.toLocaleString()}</div>
+                </div>
+              </div>
+            </div>
+            <div class="savings-badge" style="margin-top: 12px;">Save €${savings.toLocaleString()}/month (${pct}% less)</div>
+          </div>
+        `;
+      }
+
+      // Map
+      if (listing.coordinates) {
+        const map = L.map('listing-map').setView(
+          [listing.coordinates.lat, listing.coordinates.lng], 14
+        );
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([listing.coordinates.lat, listing.coordinates.lng]).addTo(map)
+          .bindPopup(`<b>${listing.name}</b><br>${listing.location}`).openPopup();
+
+        // Add Google Maps button below the map
+        const mapEl = document.getElementById('listing-map');
+        const gmapsBtn = document.createElement('a');
+        gmapsBtn.href = `https://www.google.com/maps?q=${listing.coordinates.lat},${listing.coordinates.lng}`;
+        gmapsBtn.target = '_blank';
+        gmapsBtn.style.cssText = 'display:block;text-align:center;margin-top:12px;padding:12px;background:#4285f4;color:white;border-radius:8px;font-size:0.9rem;font-weight:600;text-decoration:none;';
+        gmapsBtn.textContent = '📍 Open in Google Maps';
+        mapEl.parentNode.insertBefore(gmapsBtn, mapEl.nextSibling);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadListing);
+  </script>
+</body>
+</html>

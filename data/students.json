@@ -1,0 +1,503 @@
+{
+  "last_updated": "2026-07-30T18:00:00Z",
+  "listings": [
+    {
+      "id": "tcd-trinity-hall",
+      "college": "Trinity College Dublin",
+      "name": "Trinity Hall",
+      "location": "Dartry, Dublin 6",
+      "city": "Dublin",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "Twin"
+      ],
+      "price_per_week": 325,
+      "term_weeks": 38,
+      "total_annual": 12350,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Trinity Hall in Dartry houses ~1,000 students in shared apartments. 4km from campus. Applications open Feb, close Mar. Priority 1st years.",
+      "amenities": [
+        "Bus Route",
+        "Laundry",
+        "Common Room",
+        "Sports Facilities",
+        "Bike Storage"
+      ],
+      "url": "https://www.tcd.ie/accommodation/1st-year-students/",
+      "image": "https://tcdaccomm.sirv.com/people/trinity-hall-first-year-option-2.jpg",
+      "application_opens": "February",
+      "notes": "Priority 1st years. Apply Feb-Mar. 38 weeks at 325/wk."
+    },
+    {
+      "id": "tcd-printing-house",
+      "college": "Trinity College Dublin",
+      "name": "Printing House Square",
+      "location": "On Campus, Dublin 2",
+      "city": "Dublin",
+      "type": "On-Campus",
+      "room_types": [
+        "En-suite Single",
+        "En-suite Double"
+      ],
+      "price_per_week": 370,
+      "term_weeks": 38,
+      "total_annual": 14060,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Modern en-suite rooms on Trinity's city centre campus. Walking distance to all lectures, libraries and city amenities.",
+      "amenities": [
+        "City Centre",
+        "En-suite",
+        "Modern",
+        "Library Access",
+        "Gym"
+      ],
+      "url": "https://www.tcd.ie/accommodation/",
+      "image": "https://tcdaccomm.sirv.com/places/anti-viitala-trinity00004.jpg",
+      "application_opens": "February",
+      "notes": "Postgrad from 185/wk. UG en-suite 370/wk. City centre."
+    },
+    {
+      "id": "ucd-village",
+      "college": "University College Dublin",
+      "name": "UCD Village",
+      "location": "Belfield, Dublin 4",
+      "city": "Dublin",
+      "type": "On-Campus",
+      "room_types": [
+        "Shared Twin",
+        "Single",
+        "En-suite Single"
+      ],
+      "price_per_week": 220,
+      "term_weeks": 38,
+      "total_annual": 8360,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "On-campus residences with private or twin rooms. Shared kitchens and catered packages available. Village 1 shared rooms from €5,722/year; Village 3 en-suite up to €11,889/year.",
+      "amenities": [
+        "On-Campus",
+        "Catered Option",
+        "Gym",
+        "Bus",
+        "Laundrette"
+      ],
+      "url": "https://ucd.ie/residences/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Belfield_1449w.JPG/640px-Belfield_1449w.JPG",
+      "application_opens": "April",
+      "date_closes": "2026-08-28",
+      "notes": "Cheapest: shared twin 5,722/yr. En-suite up to 11,889/yr."
+    },
+    {
+      "id": "dcu-glasnevin",
+      "college": "Dublin City University",
+      "name": "DCU Glasnevin Campus",
+      "location": "Glasnevin, Dublin 9",
+      "city": "Dublin",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "En-suite Single",
+        "Double"
+      ],
+      "price_per_week": 210,
+      "term_weeks": 40,
+      "total_annual": 8400,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Campus accommodation across Glasnevin, All Hallows and St Patrick's campuses. Single and shared rooms with communal kitchens and living spaces.",
+      "amenities": [
+        "On-Campus",
+        "Res Life Programme",
+        "Laundry",
+        "Common Room",
+        "Bus"
+      ],
+      "url": "https://www.dcu.ie/students/accommodation",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Dublin_City_University%2C_Glasnevin_campus._-_geograph.org.uk_-_489187.jpg/640px-Dublin_City_University%2C_Glasnevin_campus._-_geograph.org.uk_-_489187.jpg",
+      "application_opens": "March",
+      "notes": "Apply via dcuaccommodation.ie. Priority for 1st years."
+    },
+    {
+      "id": "maynooth-campus",
+      "college": "Maynooth University",
+      "name": "Maynooth Campus Residences",
+      "location": "Maynooth, Co. Kildare",
+      "city": "Kildare",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "En-suite Single"
+      ],
+      "price_per_week": 165,
+      "term_weeks": 38,
+      "total_annual": 6270,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "On-campus student residences in Maynooth. Self-catering with shared kitchens. 2 months room fee due as deposit before check-in.",
+      "amenities": [
+        "On-Campus",
+        "Train Station",
+        "Self-Catering",
+        "Sports",
+        "Library"
+      ],
+      "url": "https://www.maynoothuniversity.ie/student-residences/eligibility/incoming-cao-students",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Maynooth_University_Arts_Building.jpg/640px-Maynooth_University_Arts_Building.jpg",
+      "application_opens": "March",
+      "date_closes": "2026-08-15",
+      "notes": "Affordable. 165/wk. Train to Dublin 25 min."
+    },
+    {
+      "id": "galway-corrib-village",
+      "college": "University of Galway",
+      "name": "Corrib Village",
+      "location": "University of Galway Campus",
+      "city": "Galway",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "Twin"
+      ],
+      "price_per_week": 130,
+      "term_weeks": 36,
+      "total_annual": 4680,
+      "status": "closed",
+      "status_text": "Waitlist",
+      "description": "On-campus apartments at University of Galway. Twin rooms from €95/week. Single rooms from €130/week. 36-week term. Cheapest university accommodation in Ireland.",
+      "amenities": [
+        "On-Campus",
+        "Self-Catering",
+        "Laundry",
+        "Sports Centre",
+        "City Walk"
+      ],
+      "url": "https://www.universityofgalway.ie/student-life/accommodation/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/NUI_Galway_Quadrangle.jpg/640px-NUI_Galway_Quadrangle.jpg",
+      "application_opens": "March",
+      "notes": "Cheapest in Ireland. Twin 95/wk, single 130/wk."
+    },
+    {
+      "id": "ucc-castlewhite",
+      "college": "University College Cork",
+      "name": "Castlewhite Apartments",
+      "location": "UCC Campus, Cork",
+      "city": "Cork",
+      "type": "On-Campus",
+      "room_types": [
+        "Single En-suite",
+        "Twin"
+      ],
+      "price_per_week": 160,
+      "term_weeks": 38,
+      "total_annual": 6080,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Modern apartments on the UCC campus. Mix of single en-suite and twin rooms. Close to all campus facilities and Cork city centre.",
+      "amenities": [
+        "On-Campus",
+        "En-suite",
+        "City Centre",
+        "Bus",
+        "Gym"
+      ],
+      "url": "https://www.ucc.ie/en/accommodation/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/University_College_Cork_-_geograph.org.uk_-_394730.jpg/640px-University_College_Cork_-_geograph.org.uk_-_394730.jpg",
+      "application_opens": "March",
+      "notes": "Apply via UCC portal. ~€160/week for en-suite single."
+    },
+    {
+      "id": "ul-plassey",
+      "college": "University of Limerick",
+      "name": "UL Campus Residences",
+      "location": "Plassey, Co. Limerick",
+      "city": "Limerick",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "En-suite",
+        "Apartment"
+      ],
+      "price_per_week": 140,
+      "term_weeks": 38,
+      "total_annual": 5320,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Extensive on-campus accommodation along the River Shannon. Multiple village-style residences with single and apartment options.",
+      "amenities": [
+        "On-Campus",
+        "River Walk",
+        "Sports Arena",
+        "Self-Catering",
+        "Bus"
+      ],
+      "url": "https://www.ul.ie/accommodation",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/University_of_Limerick_-_Living_Bridge.jpg/640px-University_of_Limerick_-_Living_Bridge.jpg",
+      "application_opens": "February",
+      "notes": "Large campus with plenty of rooms. Good availability."
+    },
+    {
+      "id": "yugo-highfield-park",
+      "college": "Near TCD / TU Dublin",
+      "name": "Yugo Highfield Park",
+      "location": "Drumcondra, Dublin 9",
+      "city": "Dublin",
+      "type": "Private",
+      "room_types": [
+        "Single Studio",
+        "Twin Studio",
+        "En-suite"
+      ],
+      "price_per_week": 301,
+      "term_weeks": 42,
+      "total_annual": 12642,
+      "status": "open",
+      "status_text": "Rooms Available",
+      "description": "Private student accommodation close to TCD and TU Dublin. Modern studios and shared apartments with all bills included.",
+      "amenities": [
+        "Bills Included",
+        "Gym",
+        "Cinema Room",
+        "Study Spaces",
+        "Bike Storage"
+      ],
+      "url": "https://yugo.com/en-gb/global/ireland/dublin/highfield-park",
+      "image": "https://yugo.com/resource/blob/603464/924f9758504c4b4fef11e1c726e6a270/dublin-highfield-park-premium-plus-ensuite-1-data.jpg",
+      "application_opens": "Year-round",
+      "notes": "Private halls. No college affiliation needed. From €301/week."
+    },
+    {
+      "id": "yugo-broadstone",
+      "college": "Near TU Dublin / RCSI",
+      "name": "Yugo Broadstone Hall",
+      "location": "Broadstone, Dublin 7",
+      "city": "Dublin",
+      "type": "Private",
+      "room_types": [
+        "Single Studio",
+        "Twin",
+        "En-suite"
+      ],
+      "price_per_week": 310,
+      "term_weeks": 42,
+      "total_annual": 13020,
+      "status": "open",
+      "status_text": "Rooms Available",
+      "description": "City centre private student accommodation near TU Dublin Grangegorman and RCSI. All-inclusive pricing with modern amenities.",
+      "amenities": [
+        "Bills Included",
+        "City Centre",
+        "Gym",
+        "Common Areas",
+        "Laundrette"
+      ],
+      "url": "https://yugo.com/en-gb/global/ireland/dublin/broadstone-hall",
+      "image": "https://yugo.com/resource/blob/602468/e23f9db3593455f758717450f78f5652/dublin-broadstone-hall-roof-terrace-data.jpg",
+      "application_opens": "Year-round",
+      "notes": "Private halls. Book anytime. From €310/week all-inclusive."
+    },
+    {
+      "id": "yugo-new-mill",
+      "college": "Near UCD / RCSI",
+      "name": "Yugo New Mill",
+      "location": "Clonskeagh, Dublin 14",
+      "city": "Dublin",
+      "type": "Private",
+      "room_types": [
+        "En-suite Single",
+        "Studio"
+      ],
+      "price_per_week": 320,
+      "term_weeks": 42,
+      "total_annual": 13440,
+      "status": "open",
+      "status_text": "Rooms Available",
+      "description": "Private student accommodation near UCD. Modern rooms with study areas. All bills included in weekly rate.",
+      "amenities": [
+        "Bills Included",
+        "Near UCD",
+        "Study Rooms",
+        "Social Spaces",
+        "Bus"
+      ],
+      "url": "https://yugo.com/en-gb/global/ireland/dublin/new-mill",
+      "image": "https://yugo.com/resource/blob/604504/351146eda49ddb426789b00379674eec/dublin-new-mill-common-room-data.jpg",
+      "application_opens": "Year-round",
+      "notes": "Close to UCD. Book direct, no college application needed."
+    },
+    {
+      "id": "aparto-dorset-point",
+      "college": "Near TU Dublin / DCU",
+      "name": "Aparto Dorset Point",
+      "location": "North Docks, Dublin 1",
+      "city": "Dublin",
+      "type": "Private",
+      "room_types": [
+        "Classic En-suite",
+        "Superior Studio",
+        "Premium Studio"
+      ],
+      "price_per_week": 285,
+      "term_weeks": 44,
+      "total_annual": 12540,
+      "status": "open",
+      "status_text": "Rooms Available",
+      "description": "Private student halls in Dublin's docklands. Walking distance to TU Dublin and Connolly Station. Modern rooms with all bills included.",
+      "amenities": [
+        "Bills Included",
+        "Docklands",
+        "Gym",
+        "Cinema",
+        "Laundrette",
+        "Bike Store"
+      ],
+      "url": "https://apartostudent.com/locations/dublin/dorset-point/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dublin_Docklands_2022.jpg/640px-Dublin_Docklands_2022.jpg",
+      "application_opens": "Year-round",
+      "notes": "Private halls. From €285/week. Book online anytime."
+    },
+    {
+      "id": "rcsi-mercer",
+      "college": "RCSI",
+      "name": "Mercer Court",
+      "location": "Mercer Street, Dublin 2",
+      "city": "Dublin",
+      "type": "On-Campus",
+      "room_types": [
+        "En-suite Single",
+        "Studio"
+      ],
+      "price_per_week": 290,
+      "term_weeks": 40,
+      "total_annual": 11600,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Purpose-built city centre residence exclusive to RCSI students. Walking distance to St Stephens Green.",
+      "amenities": [
+        "City Centre",
+        "En-suite",
+        "Gym",
+        "Study Room"
+      ],
+      "url": "https://www.rcsi.com/dublin/student-life/accommodation",
+      "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop",
+      "application_opens": "April",
+      "notes": "RCSI students only. ~290/wk. City centre."
+    },
+    {
+      "id": "tus-athlone",
+      "college": "TUS Midlands",
+      "name": "TUS Athlone Campus",
+      "location": "Athlone, Co. Westmeath",
+      "city": "Westmeath",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "Twin"
+      ],
+      "price_per_week": 95,
+      "term_weeks": 36,
+      "total_annual": 3420,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Very affordable on-campus accommodation at TUS Athlone. One of the cheapest in Ireland.",
+      "amenities": [
+        "On-Campus",
+        "Town Centre",
+        "Sports",
+        "Library"
+      ],
+      "url": "https://www.tus.ie/student-life/accommodation/",
+      "image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=600&h=400&fit=crop",
+      "application_opens": "May",
+      "notes": "Just 95/wk! Cheapest option in Midlands."
+    },
+    {
+      "id": "atu-galway",
+      "college": "ATU Galway",
+      "name": "ATU Student Village",
+      "location": "Dublin Road, Galway",
+      "city": "Galway",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "En-suite"
+      ],
+      "price_per_week": 120,
+      "term_weeks": 36,
+      "total_annual": 4320,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "On-campus at Atlantic Technological University Galway. Close to city centre and Salthill.",
+      "amenities": [
+        "On-Campus",
+        "City Centre",
+        "Bus",
+        "Sports"
+      ],
+      "url": "https://www.atu.ie/student-life/accommodation",
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop",
+      "application_opens": "May",
+      "notes": "~120/wk. Great Galway location."
+    },
+    {
+      "id": "mtu-cork",
+      "college": "MTU Cork",
+      "name": "MTU Cork Residences",
+      "location": "Bishopstown, Cork",
+      "city": "Cork",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "Twin",
+        "En-suite"
+      ],
+      "price_per_week": 110,
+      "term_weeks": 38,
+      "total_annual": 4180,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "On-campus residences at Munster Technological University Cork in Bishopstown.",
+      "amenities": [
+        "On-Campus",
+        "Bus",
+        "Sports",
+        "Library"
+      ],
+      "url": "https://www.mycit.ie/accommodation",
+      "image": "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?w=600&h=400&fit=crop",
+      "application_opens": "April",
+      "notes": "~110/wk. Affordable Cork option."
+    },
+    {
+      "id": "setu-waterford",
+      "college": "SETU Waterford",
+      "name": "SETU Waterford Campus",
+      "location": "Cork Road, Waterford",
+      "city": "Waterford",
+      "type": "On-Campus",
+      "room_types": [
+        "Single",
+        "En-suite"
+      ],
+      "price_per_week": 100,
+      "term_weeks": 36,
+      "total_annual": 3600,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Student residences at South East Technological University. Very affordable riverside campus.",
+      "amenities": [
+        "On-Campus",
+        "River Walk",
+        "Sports",
+        "Bus"
+      ],
+      "url": "https://www.setu.ie/current-students/student-support-services/accommodation/accommodation-waterford",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "application_opens": "May",
+      "notes": "~100/wk. One of the cheapest nationally."
+    }
+  ]
+}

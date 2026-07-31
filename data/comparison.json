@@ -1,0 +1,35 @@
+{
+  "last_updated": "2026-07-30",
+  "source": "Daft.ie Rental Report Q2 2026 / RTB Rent Index",
+  "areas": [
+    { "area": "Dublin 24 (Tallaght/Citywest)", "market_1bed": 2100, "market_2bed": 2500, "cost_rental_1bed": 1225, "cost_rental_2bed": 1425 },
+    { "area": "Dublin 13 (Belmayne/Donaghmede)", "market_1bed": 1950, "market_2bed": 2350, "cost_rental_1bed": 1200, "cost_rental_2bed": 1400 },
+    { "area": "Dublin 15 (Hansfield/Ongar)", "market_1bed": 1900, "market_2bed": 2300, "cost_rental_1bed": 1150, "cost_rental_2bed": 1350 },
+    { "area": "Dublin 18 (Shankill/Kilternan)", "market_1bed": 2200, "market_2bed": 2600, "cost_rental_1bed": 1175, "cost_rental_2bed": 1450 },
+    { "area": "Dublin 22 (Clonburris/Seven Mills)", "market_1bed": 2000, "market_2bed": 2400, "cost_rental_1bed": 1350, "cost_rental_2bed": 1500 },
+    { "area": "Co. Kildare (Leixlip)", "market_1bed": 1800, "market_2bed": 2200, "cost_rental_1bed": 1357, "cost_rental_2bed": 1671 },
+    { "area": "Castletroy, Limerick", "market_1bed": 1500, "market_2bed": 1900, "cost_rental_1bed": 990, "cost_rental_2bed": 1200 },
+    { "area": "Co. Dublin (Adamstown)", "market_1bed": 1950, "market_2bed": 2350, "cost_rental_1bed": 1024, "cost_rental_2bed": 1300 }
+  ],
+  "hap_limits": [
+    { "county": "Dublin", "single": 660, "couple": 900, "couple_1child": 1000, "couple_2children": 1050 },
+    { "county": "Cork City", "single": 550, "couple": 750, "couple_1child": 850, "couple_2children": 900 },
+    { "county": "Galway City", "single": 520, "couple": 700, "couple_1child": 800, "couple_2children": 850 },
+    { "county": "Limerick City", "single": 450, "couple": 600, "couple_1child": 700, "couple_2children": 750 },
+    { "county": "Kildare", "single": 600, "couple": 800, "couple_1child": 900, "couple_2children": 950 },
+    { "county": "Wicklow", "single": 600, "couple": 800, "couple_1child": 900, "couple_2children": 950 },
+    { "county": "Meath", "single": 525, "couple": 700, "couple_1child": 800, "couple_2children": 850 },
+    { "county": "Waterford", "single": 400, "couple": 550, "couple_1child": 650, "couple_2children": 700 },
+    { "county": "Cork County", "single": 450, "couple": 600, "couple_1child": 700, "couple_2children": 750 },
+    { "county": "Louth", "single": 500, "couple": 650, "couple_1child": 750, "couple_2children": 800 },
+    { "county": "Wexford", "single": 400, "couple": 525, "couple_1child": 600, "couple_2children": 650 },
+    { "county": "Kerry", "single": 400, "couple": 525, "couple_1child": 600, "couple_2children": 650 },
+    { "county": "Galway County", "single": 400, "couple": 525, "couple_1child": 600, "couple_2children": 650 }
+  ],
+  "national_avg": {
+    "market_rent": 1850,
+    "cost_rental": 1250,
+    "savings_pct": 32,
+    "hap_avg_single": 500
+  }
+}
