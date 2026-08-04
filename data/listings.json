@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T18:11:36Z",
+  "last_updated": "2026-08-04T16:27:20Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -503,6 +503,25 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_closes": "07 August 2026 at 14:00"
+    },
+    {
+      "id": "affordable-grange",
+      "provider": "AffordableHomes.ie",
+      "name": "Grange Oaks, Kilternan, Dublin 18",
+      "location": "Kilternan Dublin 18, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 & 2 Bed",
+      "rent": 1395,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/grange/",
+      "image": "https://affordablehomes.ie/uploads/images/Grange%20Oaks%20media.jpg",
+      "ber_rating": "A3",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "05 August 2026 at 14:00"
     }
   ],
   "providers": [
