@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T16:27:20Z",
+  "last_updated": "2026-08-05T13:17:18Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -425,8 +425,8 @@
       "county": "Dublin",
       "bedrooms": "1 Bed",
       "rent": 1670,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "1-bed apartments in Walkinstown, Dublin 12. Applications open 5 August 2026 at 09:00. BER A2.",
       "amenities": [
         "Bus",
@@ -442,7 +442,8 @@
       "property_type": "apartment",
       "ber_rating": "A2",
       "market_rent": 2400,
-      "provider_url": "https://affordablehomes.ie"
+      "provider_url": "https://affordablehomes.ie",
+      "image": "https://affordablehomes.ie/uploads/images/Stoneview%20External%20(1)(1).jpg"
     },
     {
       "id": "cluid-stoneview-aug26",
@@ -452,8 +453,8 @@
       "county": "Dublin",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "Cluid Housing cost rental development in Walkinstown, Dublin 12. Launching soon.",
       "amenities": [
         "Bus",
@@ -466,7 +467,8 @@
       ],
       "property_type": "apartment",
       "ber_rating": "A2",
-      "provider_url": "https://www.cluid.ie"
+      "provider_url": "https://www.cluid.ie",
+      "image": "https://www.cluid.ie/wp-content/uploads/2025/04/stoneview-external-3-540x340.jpg"
     },
     {
       "id": "lda-cookstown-gateway-cookstown-dublin-24-5",
@@ -512,8 +514,8 @@
       "county": "Dublin",
       "bedrooms": "1 & 2 Bed",
       "rent": 1395,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
