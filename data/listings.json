@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-05T19:05:43Z",
+  "last_updated": "2026-08-06T10:13:57Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -524,6 +524,25 @@
       "ber_rating": "A3",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "05 August 2026 at 14:00"
+    },
+    {
+      "id": "affordable-farranshockpark2",
+      "provider": "AffordableHomes.ie",
+      "name": "Farranshock Park",
+      "location": "Mullingar, Co. Westmeath",
+      "county": "",
+      "bedrooms": "3 Bed",
+      "rent": 1290,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/farranshockpark2/",
+      "image": "https://affordablehomes.ie/uploads/images/Farranshock/2.png",
+      "ber_rating": "",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "06 August 2026 at 14:00"
     }
   ],
   "providers": [
