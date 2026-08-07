@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T10:13:57Z",
+  "last_updated": "2026-08-07T01:53:33Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -533,8 +533,8 @@
       "county": "",
       "bedrooms": "3 Bed",
       "rent": 1290,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
