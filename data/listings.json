@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T01:53:33Z",
+  "last_updated": "2026-08-07T10:15:12Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -543,6 +543,25 @@
       "ber_rating": "",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "06 August 2026 at 14:00"
+    },
+    {
+      "id": "affordable-dochertyhallthegreencarberrymeadows1",
+      "provider": "AffordableHomes.ie",
+      "name": "Docherty Hall, The Green, Carberry Meadows",
+      "location": "Donabate, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "2 Bed",
+      "rent": 1575,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/dochertyhallthegreencarberrymeadows1/",
+      "image": "https://affordablehomes.ie/uploads/images/Docherty%20Hall%20Image%201.png",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "07 August 2026 at 14:00"
     }
   ],
   "providers": [
