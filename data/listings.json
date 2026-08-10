@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T14:34:46Z",
+  "last_updated": "2026-08-10T14:41:33Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -562,6 +562,44 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "07 August 2026 at 14:00"
+    },
+    {
+      "id": "affordable-ancnocan1",
+      "provider": "AffordableHomes.ie",
+      "name": "An Cnocan",
+      "location": "Milleencoola, Bantry, Co. Cork",
+      "county": "Cork",
+      "bedrooms": "3 Bed",
+      "rent": 1117,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/ancnocan1/",
+      "image": "https://affordablehomes.ie/uploads/images/IMG_9651.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "17 August 2026 at 09:00"
+    },
+    {
+      "id": "affordable-hearthfield",
+      "provider": "AffordableHomes.ie",
+      "name": "Hearthfield",
+      "location": "Mount Avenue, Dundalk, Co. Louth",
+      "county": "",
+      "bedrooms": "2 & 3 Bed",
+      "rent": 1122,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/hearthfield/",
+      "image": "https://affordablehomes.ie/uploads/images/Hearthfeild/Hearthfield%20External%201.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "12 August 2026 at 14:00"
     }
   ],
   "providers": [
