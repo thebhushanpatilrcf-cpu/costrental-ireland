@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T14:41:33Z",
+  "last_updated": "2026-08-12T12:34:50Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -600,6 +600,23 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "12 August 2026 at 14:00"
+    },
+    {
+      "id": "lda-barnwell-point-hansfield-dublin-15-9",
+      "provider": "LDA",
+      "name": "Barnwell Point",
+      "location": "Hansfield, Dublin 15",
+      "county": "Dublin",
+      "bedrooms": "Studio",
+      "rent": 1050,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "The Land Development Agency (LDA) presents Barnwell Point Apartments. Located beside Hansfield Train Station and a short stroll away from Ongar Village. Barnwell Point is close to the M3 Motorway and has access to the M50 Motorway via the Blanchardst",
+      "amenities": [],
+      "parking": null,
+      "url": "https://lda.ie/homes/lda-cost-rental/barnwell-point-hansfield-dublin-15-9",
+      "image": "https://lda.ie/uploads/images/Barnwell-1.jpg",
+      "provider_url": "https://lda.ie"
     }
   ],
   "providers": [
