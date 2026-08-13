@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T12:35:54Z",
+  "last_updated": "2026-08-13T16:11:56Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -626,8 +626,8 @@
       "county": "Dublin",
       "bedrooms": "1 Bed",
       "rent": 1268,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -704,6 +704,25 @@
       "url": "https://www.cluid.ie/property/airton-plaza-tallaght-aug26/",
       "image": "https://www.cluid.ie/wp-content/uploads/2025/05/One-bed-External--540x340.jpg",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-coopersquare1",
+      "provider": "AffordableHomes.ie",
+      "name": "Cooper Square",
+      "location": "Seven Mills, Clonburris, Dublin 22, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "2 Bed",
+      "rent": 1600,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/coopersquare1/",
+      "image": "https://affordablehomes.ie/uploads/images/coopers/2-web-or-mls-2-print-Externals-2%20(2).jpg",
+      "ber_rating": "A3",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "27 August 2026 at 12:00"
     }
   ],
   "providers": [
