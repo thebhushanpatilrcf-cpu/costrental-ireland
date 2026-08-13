@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T09:46:40Z",
+  "last_updated": "2026-08-13T12:35:54Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -636,6 +636,74 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "13 August 2026 at 14:00"
+    },
+    {
+      "id": "cluid-newton-heights-aug26",
+      "provider": "Clúid Housing",
+      "name": "Newton Heights",
+      "location": "Newton Heights, Lotamore, Cork",
+      "county": "Cork",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/newton-heights-aug26/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2025/04/newton-heights-property-540x340.jpg",
+      "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "cluid-longview-aug26",
+      "provider": "Clúid Housing",
+      "name": "Longview",
+      "location": "Longview, White's Cross,Co. Cork",
+      "county": "Cork",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/longview-aug26/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2025/06/longview-listing-picture-540x340.jpg",
+      "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "cluid-the-paddocks-aug26",
+      "provider": "Clúid Housing",
+      "name": "The Paddocks",
+      "location": "The Paddocks, Morristown, Newbridge, Co. Kildare",
+      "county": "Kildare",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/the-paddocks-aug26/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2025/04/the-paddocks-listing-pic.jpg",
+      "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "cluid-airton-plaza-tallaght-aug26",
+      "provider": "Clúid Housing",
+      "name": "Airton Plaza, Belgard Road, Dublin 24",
+      "location": "Airton Plaza, Belgard Road, Dublin 24",
+      "county": "Dublin",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/airton-plaza-tallaght-aug26/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2025/05/One-bed-External--540x340.jpg",
+      "provider_url": "https://www.cluid.ie"
     }
   ],
   "providers": [
