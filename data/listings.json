@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12T16:11:34Z",
+  "last_updated": "2026-08-13T09:46:40Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -617,6 +617,25 @@
       "url": "https://lda.ie/homes/lda-cost-rental/barnwell-point-hansfield-dublin-15-9",
       "image": "https://lda.ie/uploads/images/Barnwell-1.jpg",
       "provider_url": "https://lda.ie"
+    },
+    {
+      "id": "affordable-kilmartingrove5",
+      "provider": "AffordableHomes.ie",
+      "name": "Kilmartin Grove",
+      "location": "Hollystown, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1268,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/kilmartingrove5/",
+      "image": "https://affordablehomes.ie/uploads/images/Kilmartin/Kilmartin-Grove-cherry.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "13 August 2026 at 14:00"
     }
   ],
   "providers": [
