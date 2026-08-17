@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T16:11:56Z",
+  "last_updated": "2026-08-17T08:07:06Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -571,8 +571,8 @@
       "county": "Cork",
       "bedrooms": "3 Bed",
       "rent": 1117,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
