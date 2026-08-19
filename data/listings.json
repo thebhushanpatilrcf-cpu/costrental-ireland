@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T14:05:43Z",
+  "last_updated": "2026-08-19T16:02:08Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -817,6 +817,25 @@
       "ber_rating": "A1",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "19 August 2026 at 14:00"
+    },
+    {
+      "id": "affordable-balmoston",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Donabate, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1, 2 & 3 Bed",
+      "rent": 1330,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/balmoston/",
+      "image": "https://affordablehomes.ie/uploads/images/Balmoston%20media.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "21 August 2026 at 14:00"
     }
   ],
   "providers": [
