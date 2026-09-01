@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01T00:12:49Z",
+  "last_updated": "2026-09-01T15:19:07Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -862,8 +862,8 @@
       "county": "Dublin",
       "bedrooms": "2 Bed",
       "rent": 1296,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -929,6 +929,25 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_closes": "01 September 2026 at 14:00"
+    },
+    {
+      "id": "affordable-ardraithni",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Bearna, Co. Galway",
+      "county": "Galway",
+      "bedrooms": "3 Bed",
+      "rent": 1590,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/ardraithni/",
+      "image": "https://affordablehomes.ie/uploads/images/4c18d16b-129a-4fdd-bb0f-629468e79ce2.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "07 September 2026 at 14:00"
     }
   ],
   "providers": [
