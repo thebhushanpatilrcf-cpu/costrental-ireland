@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T12:23:55Z",
+  "last_updated": "2026-09-02T16:55:40Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -957,8 +957,8 @@
       "county": "Dublin",
       "bedrooms": "3 Bed",
       "rent": 1620,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
