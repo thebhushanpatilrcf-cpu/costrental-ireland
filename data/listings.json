@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01T15:19:07Z",
+  "last_updated": "2026-09-02T12:23:55Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -948,6 +948,25 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_closes": "07 September 2026 at 14:00"
+    },
+    {
+      "id": "affordable-kilmartingrove",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Hollystown, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "3 Bed",
+      "rent": 1620,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/kilmartingrove/",
+      "image": "https://affordablehomes.ie/uploads/images/Kilmartin-Grove-cherry.jpg",
+      "ber_rating": "A1",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "02 September 2026 at 14:00"
     }
   ],
   "providers": [
