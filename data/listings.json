@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T16:55:40Z",
+  "last_updated": "2026-09-03T14:49:12Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -967,6 +967,25 @@
       "ber_rating": "A1",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "02 September 2026 at 14:00"
+    },
+    {
+      "id": "affordable-cornmaddy",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Athlone, Co. Westmeath",
+      "county": "",
+      "bedrooms": "1 & 2 Bed",
+      "rent": 1010,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/cornmaddy/",
+      "image": "https://affordablehomes.ie/uploads/images/1%20Bed%20Cornmaddy%20Court.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "04 September 2026 at 14:00"
     }
   ],
   "providers": [
