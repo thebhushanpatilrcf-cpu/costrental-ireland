@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T14:49:12Z",
+  "last_updated": "2026-09-04T16:39:53Z",
   "listings": [
     {
       "id": "lda-cookstown-gateway-jul2026",
@@ -976,8 +976,8 @@
       "county": "",
       "bedrooms": "1 & 2 Bed",
       "rent": 1010,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -986,6 +986,25 @@
       "ber_rating": "A2",
       "provider_url": "https://affordablehomes.ie",
       "date_opens": "04 September 2026 at 14:00"
+    },
+    {
+      "id": "affordable-kil",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Clondalkin, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1054,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/kil/",
+      "image": "https://affordablehomes.ie/uploads/images/Kilcarberry%20Grange%20-%20rowans%20and%20ashes.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "07 September 2026 at 14:00"
     }
   ],
   "providers": [
