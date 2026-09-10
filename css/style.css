@@ -1234,3 +1234,8 @@ button { cursor: pointer; font-family: inherit; }
 
 /* === AD ZONE === */
 .ad-zone { max-width: var(--max-width); margin: 16px auto; padding: 0 20px; min-height: 90px; }
+
+/* --- Search box + map price pins (added) --- */
+.filter-search { flex: 1 1 220px; min-width: 200px; }
+#filter-search::placeholder { color: var(--gray-400, #9ca3af); }
+.custom-marker.price-pin { background: transparent !important; border: none !important; }

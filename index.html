@@ -111,12 +111,17 @@
   <!-- Filter Bar (Cost Rental) -->
   <div class="filter-bar" id="filter-bar">
     <div class="container">
+      <div class="filter-group filter-search">
+        <label>Search</label>
+        <input type="text" class="filter-select" id="filter-search" placeholder="🔍 Area, name or provider…" autocomplete="off">
+      </div>
       <div class="filter-group">
         <label>Status</label>
         <select class="filter-select" id="filter-status">
           <option value="all">All Statuses</option>
           <option value="saved">❤️ My Saved</option>
           <option value="open">Open</option>
+          <option value="closing_soon">⏰ Closing Soon</option>
           <option value="coming_soon">Coming Soon</option>
           <option value="closed">Closed</option>
         </select>
@@ -146,6 +151,16 @@
           <option value="1400">Under €1,400</option>
           <option value="1600">Under €1,600</option>
           <option value="2000">Under €2,000</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Sort</label>
+        <select class="filter-select" id="filter-sort">
+          <option value="status">Open First</option>
+          <option value="closing">Closing Soonest</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="name">Name A-Z</option>
         </select>
       </div>
       <div class="filter-count">
@@ -603,9 +618,15 @@
         </div>
         <div class="footer-links">
           <h4>Resources</h4>
-          <a href="https://affordablehomes.ie/" target="_blank">AffordableHomes.ie</a>
-          <a href="https://lda.ie" target="_blank">LDA</a>
-          <a href="https://www.gov.ie/en/publication/cost-rental/" target="_blank">Gov.ie</a>
+          <a href="https://affordablehomes.ie/" target="_blank" rel="noopener">AffordableHomes.ie</a>
+          <a href="https://lda.ie" target="_blank" rel="noopener">LDA</a>
+          <a href="https://www.gov.ie/en/publication/cost-rental/" target="_blank" rel="noopener">Gov.ie</a>
+        </div>
+        <div class="footer-links">
+          <h4>Official Guidance</h4>
+          <a href="https://www.citizensinformation.ie/en/housing/renting-a-home/help-with-renting/cost-rental-housing/" target="_blank" rel="noopener">Citizens Information</a>
+          <a href="https://www.housingagency.ie/crtis/" target="_blank" rel="noopener">Housing Agency (CRTiS)</a>
+          <a href="https://www.rtb.ie/renting/types-of-tenancies/cost-rental-housing/" target="_blank" rel="noopener">RTB — Your Rights</a>
         </div>
       </div>
       <div class="footer-bottom">

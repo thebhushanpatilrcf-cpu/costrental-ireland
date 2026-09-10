@@ -36,24 +36,24 @@ function addMarkers() {
 
     const color = statusColors[listing.status] || '#9ca3af';
 
+    // Zillow/Daft-style price pin: show the rent right on the map.
+    const priceLabel = listing.rent ? '€' + Math.round(listing.rent / 1) : 'TBC';
+    const pinText = listing.rent ? '€' + (listing.rent >= 1000 ? (listing.rent/1000).toFixed(listing.rent % 1000 === 0 ? 0 : 1) + 'k' : listing.rent) : 'TBC';
     const icon = L.divIcon({
-      className: 'custom-marker',
+      className: 'custom-marker price-pin',
       html: `<div style="
-        width: 32px;
-        height: 32px;
         background: ${color};
-        border: 3px solid white;
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border: 2px solid white;
+        border-radius: 14px;
+        padding: 3px 9px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.35);
         color: white;
         font-size: 12px;
         font-weight: 700;
-      ">🏠</div>`,
-      iconSize: [32, 32],
-      iconAnchor: [16, 16],
+        white-space: nowrap;
+      ">${pinText}</div>`,
+      iconSize: [48, 24],
+      iconAnchor: [24, 12],
     });
 
     const marker = L.marker(

@@ -107,35 +107,72 @@ function populateFilters() {
   });
 }
 
+// Days until a listing closes (null if unknown). Used for "closing soon" + sorting.
+function daysUntilClose(l) {
+  const d = parseListingDate(l.date_closes);
+  if (!d) return null;
+  return (d.getTime() - Date.now()) / (1000 * 60 * 60 * 24);
+}
+
 // Filter listings
 function filterListings() {
   const status = document.getElementById('filter-status').value;
   const location = document.getElementById('filter-location').value;
   const bedrooms = document.getElementById('filter-bedrooms').value;
   const price = document.getElementById('filter-price').value;
+  const sortEl = document.getElementById('filter-sort');
+  const sort = sortEl ? sortEl.value : 'status';
+  const searchEl = document.getElementById('filter-search');
+  const q = searchEl ? searchEl.value.trim().toLowerCase() : '';
 
   let filtered = listings.filter(l => {
     if (status !== 'all') {
       if (status === 'saved') {
         if (!savedListings.includes(l.id)) return false;
+      } else if (status === 'closing_soon') {
+        const d = daysUntilClose(l);
+        if (l.status !== 'open' || d === null || d < 0 || d > 7) return false;
       } else if (l.status !== status) return false;
     }
     if (location !== 'all' && l.county !== location) return false;
     if (bedrooms !== 'all') {
-      if (!l.bedrooms.toLowerCase().includes(bedrooms.toLowerCase())) return false;
+      if (!(l.bedrooms || '').toLowerCase().includes(bedrooms.toLowerCase())) return false;
     }
     if (price !== 'all' && l.rent && l.rent > parseInt(price)) return false;
+    if (q) {
+      const hay = [l.name, l.location, l.county, l.provider].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
     return true;
   });
 
-  // Maintain sort order
-  filtered.sort((a, b) => {
-    const order = { open: 0, coming_soon: 1, closed: 2 };
-    return (order[a.status] || 3) - (order[b.status] || 3);
-  });
+  filtered.sort(getSortComparator(sort));
 
   renderListings(filtered);
   document.getElementById('visible-count').textContent = filtered.length;
+}
+
+// Shared sort comparator used by cost-rental (and reusable elsewhere).
+function getSortComparator(sort) {
+  const statusOrder = { open: 0, coming_soon: 1, closed: 2 };
+  switch (sort) {
+    case 'price-asc':
+      return (a, b) => (a.rent || Infinity) - (b.rent || Infinity);
+    case 'price-desc':
+      return (a, b) => (b.rent || 0) - (a.rent || 0);
+    case 'name':
+      return (a, b) => (a.name || '').localeCompare(b.name || '');
+    case 'closing':
+      return (a, b) => {
+        // Open-and-closing-soonest first; unknown/closed sink to the bottom.
+        const da = daysUntilClose(a), db = daysUntilClose(b);
+        const va = (a.status === 'open' && da !== null && da >= 0) ? da : Infinity;
+        const vb = (b.status === 'open' && db !== null && db >= 0) ? db : Infinity;
+        return va - vb;
+      };
+    default: // 'status'
+      return (a, b) => (statusOrder[a.status] || 3) - (statusOrder[b.status] || 3);
+  }
 }
 
 // Render listing cards
@@ -354,6 +391,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('filter-location').addEventListener('change', filterListings);
   document.getElementById('filter-bedrooms').addEventListener('change', filterListings);
   document.getElementById('filter-price').addEventListener('change', filterListings);
+  const sortEl = document.getElementById('filter-sort');
+  if (sortEl) sortEl.addEventListener('change', filterListings);
+  const searchEl = document.getElementById('filter-search');
+  if (searchEl) searchEl.addEventListener('input', filterListings);
 });
 
 
