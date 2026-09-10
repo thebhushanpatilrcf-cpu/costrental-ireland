@@ -18,13 +18,7 @@ async function init() {
 
     // Safety net: auto-close any listing whose application deadline has passed,
     // even if the stored status is stale. Keeps the site honest between scrapes.
-    listings.forEach(l => {
-      const closes = parseListingDate(l.date_closes);
-      if (l.status === 'open' && closes && closes.getTime() < Date.now()) {
-        l.status = 'closed';
-        l.status_text = 'Applications Closed';
-      }
-    });
+    autoCloseExpired(listings);
 
     // Sort: open first, then coming_soon, then closed
     listings.sort((a, b) => {
@@ -77,6 +71,20 @@ function parseListingDate(raw) {
     return new Date(year, mon, day, hh, mm);
   }
   return null;
+}
+
+// Auto-close any listing whose application deadline has passed, regardless of the
+// stored status. Applied to cost-rental, purchase, and student listings so every tab
+// stays honest between data refreshes.
+function autoCloseExpired(items, closedText) {
+  items.forEach(l => {
+    const closes = parseListingDate(l.date_closes);
+    if (l.status === 'open' && closes && closes.getTime() < Date.now()) {
+      l.status = 'closed';
+      l.status_text = closedText || 'Applications Closed';
+    }
+  });
+  return items;
 }
 
 // Image helper: some listings use an `images` array, newer ones use a single
@@ -404,7 +412,7 @@ async function loadStudentData() {
   try {
     const res = await fetch('data/students.json');
     const data = await res.json();
-    studentListings = data.listings;
+    studentListings = autoCloseExpired(data.listings, 'Closed');
     // Sort: open first
     studentListings.sort((a, b) => {
       const order = { open: 0, closed: 1 };
@@ -1085,6 +1093,22 @@ async function loadPurchaseData() {
     const res = await fetch('data/purchase.json');
     const data = await res.json();
     purchaseListings = data.listings;
+    // Date-based status correction:
+    //  - a "coming_soon" whose open date has passed becomes "open"
+    //  - anything past its close date becomes "closed"
+    const now = Date.now();
+    purchaseListings.forEach(l => {
+      const opens = parseListingDate(l.date_opens);
+      const closes = parseListingDate(l.date_closes);
+      if (l.status === 'coming_soon' && opens && opens.getTime() <= now) {
+        l.status = 'open';
+        l.status_text = 'Applications Open';
+      }
+      if (l.status !== 'closed' && closes && closes.getTime() < now) {
+        l.status = 'closed';
+        l.status_text = 'Applications Closed';
+      }
+    });
     purchaseListings.sort((a, b) => {
       const order = { open: 0, coming_soon: 1, closed: 2 };
       return (order[a.status] || 2) - (order[b.status] || 2);
