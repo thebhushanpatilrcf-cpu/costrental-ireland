@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-09-10T15:59:15Z",
+  "last_updated": "2026-09-10T16:09:25Z",
   "listings": [
     {
       "id": "ah-folkstown",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Folkstown Park, Balbriggan, Co Dublin (Phase 2)",
       "location": "Balbriggan, Co. Dublin",
       "county": "Dublin",
@@ -25,7 +25,7 @@
     },
     {
       "id": "ah-ardraithni2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ard Raithní",
       "location": "Bearna, Co. Galway",
       "county": "Galway",
@@ -47,7 +47,7 @@
     },
     {
       "id": "ah-kil",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -69,7 +69,7 @@
     },
     {
       "id": "ah-blessingtondemesne",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ballycomyn, Blessington",
       "location": "Blessington, Co. Wicklow",
       "county": "Wicklow",
@@ -91,7 +91,7 @@
     },
     {
       "id": "ah-kilmartingrove",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove, Hollystown, Co. Dublin",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -113,7 +113,7 @@
     },
     {
       "id": "ah-balmoston",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Balmoston, Donabate, Co Dublin",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -135,7 +135,7 @@
     },
     {
       "id": "ah-kilcarbey",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -157,7 +157,7 @@
     },
     {
       "id": "ah-ardraithni",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ard Raithní",
       "location": "Bearna, Co. Galway",
       "county": "Galway",
@@ -179,7 +179,7 @@
     },
     {
       "id": "ah-cornmaddy",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Cornamaddy Court, Athlone, Co. Westmeath",
       "location": "Athlone, Co. Westmeath",
       "county": "Westmeath",
@@ -223,7 +223,7 @@
     },
     {
       "id": "ah-park",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Parklands Parade, Citywest, Dublin 24",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -245,7 +245,7 @@
     },
     {
       "id": "ah-ancnocan1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "An Cnocan",
       "location": "Milleencoola, Bantry, Co. Cork",
       "county": "Cork",
@@ -267,7 +267,7 @@
     },
     {
       "id": "ah-rathbornewharf",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Rathborne Wharf",
       "location": "Dublin 15, Co. Dublin",
       "county": "Dublin",
@@ -289,7 +289,7 @@
     },
     {
       "id": "ah-hearthfield",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Hearthfield",
       "location": "Mount Avenue, Dundalk, Co. Louth",
       "county": "Louth",
@@ -311,7 +311,7 @@
     },
     {
       "id": "ah-airtonplaza3",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Airton Plaza",
       "location": "Belgard Road, Tallaght, Co. Dublin",
       "county": "Dublin",
@@ -333,7 +333,7 @@
     },
     {
       "id": "ah-kilmartin",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove, Hollystown, Co. Dublin",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -355,7 +355,7 @@
     },
     {
       "id": "ah-longview2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Longview",
       "location": "Ballyvolane, Co. Cork",
       "county": "Cork",
@@ -377,7 +377,7 @@
     },
     {
       "id": "ah-newtonheights",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Newton Heights",
       "location": "Lotamore, Co. Cork",
       "county": "Cork",
@@ -399,7 +399,7 @@
     },
     {
       "id": "ah-kilmartingrove5",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -421,7 +421,7 @@
     },
     {
       "id": "ah-grange",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Grange Oaks, Kilternan, Dublin 18",
       "location": "Kilternan Dublin 18, Co. Dublin",
       "county": "Dublin",
@@ -443,7 +443,7 @@
     },
     {
       "id": "ah-dochertyhallthegreencarberrymeadows1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Docherty Hall, The Green, Carberry Meadows",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -465,7 +465,7 @@
     },
     {
       "id": "ah-farranshockpark2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Farranshock Park",
       "location": "Mullingar, Co. Westmeath",
       "county": "Westmeath",
@@ -487,7 +487,7 @@
     },
     {
       "id": "ah-stoneview1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Stoneview",
       "location": "Walkinstown, Co. Dublin",
       "county": "Dublin",
@@ -509,7 +509,7 @@
     },
     {
       "id": "ah-carrigmorewoods3",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Carrigmore Woods",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -531,7 +531,7 @@
     },
     {
       "id": "ah-barnhallmeadows3",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Barnhall Meadows",
       "location": "Leixlip, Co. Kildare",
       "county": "Kildare",
@@ -553,7 +553,7 @@
     },
     {
       "id": "ah-thepaddocks3",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "The Paddocks",
       "location": "Morristown, Newbridge, Co. Kildare",
       "county": "Kildare",
@@ -575,7 +575,7 @@
     },
     {
       "id": "ah-woodsiderise",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Woodside Rise",
       "location": "Enniskerry, Dublin 18, Co. Dublin",
       "county": "Dublin",
@@ -597,7 +597,7 @@
     },
     {
       "id": "ah-deverdonplace3",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "DeVerdon Place",
       "location": "Malahide Road, Co. Dublin",
       "county": "Dublin",
@@ -619,7 +619,7 @@
     },
     {
       "id": "ah-piperssquare1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Pipers Square",
       "location": "Charlestown, Co. Dublin",
       "county": "Dublin",
@@ -641,7 +641,7 @@
     },
     {
       "id": "ah-warrenscourt",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "Warrens Court",
       "location": "Barnahely, Ringaskiddy,, Co. Cork",
       "county": "Cork",
@@ -663,7 +663,7 @@
     },
     {
       "id": "ah-barnoaks1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Barnoaks",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -685,7 +685,7 @@
     },
     {
       "id": "ah-swiftbanks1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Swiftbanks",
       "location": "Mill Road, Saggart, Co. Dublin",
       "county": "Dublin",
@@ -707,7 +707,7 @@
     },
     {
       "id": "ah-carrigmorewoods",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Carrigmore Woods",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -729,7 +729,7 @@
     },
     {
       "id": "ah-kilcarberygrange2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilcarbery Grange",
       "location": "Clondalkin, Dublin 22, Co. Dublin",
       "county": "Dublin",
@@ -751,7 +751,7 @@
     },
     {
       "id": "ah-lancastergate3",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Lancaster Gate",
       "location": "Cork City, Co. Cork",
       "county": "Cork",
@@ -773,7 +773,7 @@
     },
     {
       "id": "ah-rathrua1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Rath Rua",
       "location": "Portlaoise, Co. Laois",
       "county": "Laois",
@@ -795,7 +795,7 @@
     },
     {
       "id": "ah-folkstownpark1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Folkstown Park",
       "location": "Balbriggan, Co. Dublin",
       "county": "Dublin",
@@ -817,7 +817,7 @@
     },
     {
       "id": "ah-mountneil1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Mountneil",
       "location": "Carrickperish, Co. Wexford",
       "county": "Wexford",
@@ -839,7 +839,7 @@
     },
     {
       "id": "ah-cornamaddycourt",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Cornamaddy Court",
       "location": "Athlone, Co. Westmeath",
       "county": "Westmeath",
@@ -861,7 +861,7 @@
     },
     {
       "id": "ah-baileadaim1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "Baile Adaim",
       "location": "Carrigtwohill, Co. Cork",
       "county": "Cork",
@@ -883,7 +883,7 @@
     },
     {
       "id": "ah-antobar1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "An Tobar",
       "location": "Letteragh Road, Rahoon, Co. Galway",
       "county": "Galway",
@@ -905,7 +905,7 @@
     },
     {
       "id": "ah-themill1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "The Mills",
       "location": "Castletroy, Co. Limerick",
       "county": "Limerick",
@@ -927,7 +927,7 @@
     },
     {
       "id": "ah-whitehaven1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Whitehaven",
       "location": "Northwood, Santry, Co. Dublin",
       "county": "Dublin",
@@ -949,7 +949,7 @@
     },
     {
       "id": "ah-silverwood",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "Silverwood, Chickley’s Road, Youghal, Co. Cork",
       "location": "Youghal, Co. Cork",
       "county": "Cork",
@@ -971,7 +971,7 @@
     },
     {
       "id": "ah-hal",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Baker Hall, Navan, Co. Meath",
       "location": "Navan, Co. Meath",
       "county": "Meath",
@@ -993,7 +993,7 @@
     },
     {
       "id": "ah-ferrard",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ferrard Court, Drogheda",
       "location": "Drogheda, Co. Louth",
       "county": "Louth",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": "ah-citywest",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Foxwood Barn, Citywest, Dublin 24",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "ah-pipers",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Pipers Square, Charlestown, Dublin 11",
       "location": "Charlestown, Co. Dublin",
       "county": "Dublin",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": "ah-montpelier",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Montpelier",
       "location": "Dublin 7, Co. Dublin",
       "county": "Dublin",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": "ah-bishopsgate1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Bishop’s Gate",
       "location": "Enniskerry Rd, Kilternan, Co. Dublin",
       "county": "Dublin",
@@ -1103,7 +1103,7 @@
     },
     {
       "id": "ah-kilcarberygrange1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilcarbery Grange",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": "ah-nivenoaks",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Niven Oaks",
       "location": "Santry, Co. Dublin",
       "county": "Dublin",
@@ -1147,7 +1147,7 @@
     },
     {
       "id": "ah-parklandsparade2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Parklands Parade",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": "ah-folkstownpark",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Folkstown Park",
       "location": "Balbriggan, Co. Dublin",
       "county": "Dublin",
@@ -1191,7 +1191,7 @@
     },
     {
       "id": "ah-lanestownview2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "Lanestown View",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -1213,7 +1213,7 @@
     },
     {
       "id": "ah-foxwood",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Foxwood Barn, Citywest, Co. Dublin 24",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "ah-kilmartingrove4",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -1257,7 +1257,7 @@
     },
     {
       "id": "ah-airtonroad",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Airton Road, Tallaght, Dublin 24",
       "location": "Tallaght, Co. Dublin",
       "county": "Dublin",
@@ -1279,7 +1279,7 @@
     },
     {
       "id": "ah-walkersgate1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Walker’s Gate",
       "location": "Kildare Town, Co. Kildare",
       "county": "Kildare",
@@ -1301,7 +1301,7 @@
     },
     {
       "id": "ah-southgate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Southgate Hall, Kilcarbery Grange",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -1323,7 +1323,7 @@
     },
     {
       "id": "ah-stradowe-meadows-phase-two",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Stradowe Meadows (Phase 2)",
       "location": "Athy, Co. Kildare",
       "county": "Kildare",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": "ah-theavenuebalmoston",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "The Avenue, Balmoston",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -1367,7 +1367,7 @@
     },
     {
       "id": "ah-docherty-hall",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Docherty Hall, The Green, Carberry Meadows",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -1389,7 +1389,7 @@
     },
     {
       "id": "ah-claimor",
-      "provider": "AffordableHomes.ie",
+      "provider": "Galway City Council",
       "name": "Claí Mór, Old Monivea Road",
       "location": "Ballybrit, Co. Galway",
       "county": "Galway",
@@ -1411,7 +1411,7 @@
     },
     {
       "id": "ah-the-grange-maynooth",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "The Grange, Celbridge Road",
       "location": "Maynooth, Co. Kildare",
       "county": "Kildare",
@@ -1433,7 +1433,7 @@
     },
     {
       "id": "ah-gracefields-0126",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Gracefields, Athlone",
       "location": "Athlone, Co. Westmeath",
       "county": "Westmeath",
@@ -1455,7 +1455,7 @@
     },
     {
       "id": "ah-kilmartin-grove-0126",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -1477,7 +1477,7 @@
     },
     {
       "id": "ah-oscartraynor-woods",
-      "provider": "AffordableHomes.ie",
+      "provider": "Dublin City Council",
       "name": "Oscar Traynor Woods",
       "location": "Dublin 17, Co. Dublin",
       "county": "Dublin",
@@ -1499,7 +1499,7 @@
     },
     {
       "id": "ah-tullybrook",
-      "provider": "AffordableHomes.ie",
+      "provider": "Louth County Council",
       "name": "Tullybrook, Drogheda",
       "location": "Drogheda, Co. Louth",
       "county": "Louth",
@@ -1521,7 +1521,7 @@
     },
     {
       "id": "ah-airton",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Airton Road, Tallaght",
       "location": "Tallaght, Co. Dublin",
       "county": "Dublin",
@@ -1543,7 +1543,7 @@
     },
     {
       "id": "ah-sidings-0126",
-      "provider": "AffordableHomes.ie",
+      "provider": "Oaklee",
       "name": "The Sidings",
       "location": "Adamstown, Co. Dublin",
       "county": "Dublin",
@@ -1565,7 +1565,7 @@
     },
     {
       "id": "ah-carrigmore-woods-0126",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Carrigmore Woods, Citywest, Dublin 24",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -1609,7 +1609,7 @@
     },
     {
       "id": "ah-glanmore-heights-0125",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Glanmore Heights, Dún na Rí, Coosan",
       "location": "Athlone, Co. Westmeath",
       "county": "Westmeath",
@@ -1631,7 +1631,7 @@
     },
     {
       "id": "ah-coolvally",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Coolevally",
       "location": "Shankill, Co. Dublin",
       "county": "Dublin",
@@ -1653,7 +1653,7 @@
     },
     {
       "id": "ah-deverdon-1225",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "De Verdon Place",
       "location": "Malahide Road, Co. Dublin",
       "county": "Dublin",
@@ -1675,7 +1675,7 @@
     },
     {
       "id": "ah-eastgate-kilcarbery-1225",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Eastgate Hall, Kilcarbery Grange, Dublin 22",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -1697,7 +1697,7 @@
     },
     {
       "id": "ah-kilmartin-grove-1225",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -1719,7 +1719,7 @@
     },
     {
       "id": "ah-northgatehall",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Northgate Hall, Kilcarbery Grange, Clondalkin, Dublin 22",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -1741,7 +1741,7 @@
     },
     {
       "id": "ah-parklands-parade",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Parklands Parade, Citywest, Dublin 24",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -1763,7 +1763,7 @@
     },
     {
       "id": "ah-baileadaim",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "Baile Adaim",
       "location": "Carrigtwohill, Co. Cork",
       "county": "Cork",
@@ -1785,7 +1785,7 @@
     },
     {
       "id": "ah-cobbecourt",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Cobbe Court",
       "location": "Portrane Road, Donabate, Co. Dublin",
       "county": "Dublin",
@@ -1807,7 +1807,7 @@
     },
     {
       "id": "ah-parkstreet1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Monaghan County Council",
       "name": "Park Street",
       "location": "35 – 36 Park Street, Co. Monaghan",
       "county": "Monaghan",
@@ -1829,7 +1829,7 @@
     },
     {
       "id": "ah-belinwoods",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Belin Woods",
       "location": "Newbridge, Co. Kildare",
       "county": "Kildare",
@@ -1851,7 +1851,7 @@
     },
     {
       "id": "ah-foxwoodbarn2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Foxwood Barn",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -1873,7 +1873,7 @@
     },
     {
       "id": "ah-coopersquare",
-      "provider": "AffordableHomes.ie",
+      "provider": "Land Development Agency",
       "name": "Cooper Square",
       "location": "Seven Mills, Clonburris, Dublin 22, Co. Dublin",
       "county": "Dublin",
@@ -1895,7 +1895,7 @@
     },
     {
       "id": "ah-lanestownview",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "Lanestown View",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -1917,7 +1917,7 @@
     },
     {
       "id": "ah-robinrathgreen",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Robinrath Green",
       "location": "Navan, Co. Meath",
       "county": "Meath",
@@ -1939,7 +1939,7 @@
     },
     {
       "id": "ah-stradowemeadows",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Stradowe Meadows",
       "location": "Athy, Co. Kildare",
       "county": "Kildare",
@@ -1961,7 +1961,7 @@
     },
     {
       "id": "ah-innovationsquare",
-      "provider": "AffordableHomes.ie",
+      "provider": "South Dublin County Council",
       "name": "Innovation Square",
       "location": "Belgard, Co. Dublin",
       "county": "Dublin",
@@ -1983,7 +1983,7 @@
     },
     {
       "id": "ah-churchfields",
-      "provider": "AffordableHomes.ie",
+      "provider": "Fingal County Council",
       "name": "Church Fields, Dublin 15",
       "location": "Mulhuddart, Co. Dublin",
       "county": "Dublin",
@@ -2005,7 +2005,7 @@
     },
     {
       "id": "ah-lisieuxhall",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Lisieux Hall, Sandyford, Dublin 18",
       "location": "Sandyford, Co. Dublin",
       "county": "Dublin",
@@ -2027,7 +2027,7 @@
     },
     {
       "id": "ah-parkside2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Parkside, Belmayne, Dublin 13",
       "location": "Belmayne, Co. Dublin",
       "county": "Dublin",
@@ -2049,7 +2049,7 @@
     },
     {
       "id": "ah-deverdonplace",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "De Verdon Place",
       "location": "Malahide Road, Co. Dublin",
       "county": "Dublin",
@@ -2071,7 +2071,7 @@
     },
     {
       "id": "ah-farranshock",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Farranshock Park, Mullingar",
       "location": "Mullingar, Co. Westmeath",
       "county": "Westmeath",
@@ -2093,7 +2093,7 @@
     },
     {
       "id": "ah-kilcarberygrange",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilcarbery Grange",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -2115,7 +2115,7 @@
     },
     {
       "id": "ah-antobar",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "An Tobar, Letteragh Road",
       "location": "Rahoon, Co. Galway",
       "county": "Galway",
@@ -2137,7 +2137,7 @@
     },
     {
       "id": "ah-bishopsgate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Bishops Gate, Kiltiernan Wood, Dublin 18",
       "location": "Kiltiernan Wood, Co. Dublin",
       "county": "Dublin",
@@ -2159,7 +2159,7 @@
     },
     {
       "id": "ah-bakerhall",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Baker Hall, Academy Street, Navan",
       "location": "Navan, Co. Meath",
       "county": "Meath",
@@ -2181,7 +2181,7 @@
     },
     {
       "id": "ah-farranshockpark",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Farranshock Park, Mullingar",
       "location": "Mullingar, Co. Westmeath",
       "county": "Westmeath",
@@ -2203,7 +2203,7 @@
     },
     {
       "id": "ah-burrellswalk",
-      "provider": "AffordableHomes.ie",
+      "provider": "Kilkenny County Council",
       "name": "Burrell’s Walk, College Road, Co. Kilkenny",
       "location": "Walkinslough, Co. Kilkenny",
       "county": "Kilkenny",
@@ -2225,7 +2225,7 @@
     },
     {
       "id": "ah-fontenoyplace",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "Fontenoy Place, Strand Road, Bray Co Wicklow",
       "location": "Bray, Co. Wicklow",
       "county": "Wicklow",
@@ -2247,7 +2247,7 @@
     },
     {
       "id": "ah-themaltings",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "The Maltings, Portlaoise, Co. Laois",
       "location": "Portlaoise, Co. Laois",
       "county": "Laois",
@@ -2269,7 +2269,7 @@
     },
     {
       "id": "ah-rathrua",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Rath Rua, Dublin Road, Portlaoise",
       "location": "Portlaoise, Co. Laois",
       "county": "Laois",
@@ -2291,7 +2291,7 @@
     },
     {
       "id": "ah-grevillepark",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Greville Park, Mullingar",
       "location": "Mullingar, Co. Westmeath",
       "county": "Westmeath",
@@ -2313,7 +2313,7 @@
     },
     {
       "id": "ah-maple-woods-0825",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Maple Woods, Ballinacurra, Midleton",
       "location": "Midleton, Co. Cork",
       "county": "Cork",
@@ -2335,7 +2335,7 @@
     },
     {
       "id": "ah-swiftbanks",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Swiftbanks, Mill Road",
       "location": "Saggart, Co. Dublin",
       "county": "Dublin",
@@ -2357,7 +2357,7 @@
     },
     {
       "id": "ah-woodside-rise-0925",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Woodside Rise, Enniskerry, D18",
       "location": "Stepaside, Dublin 18, Co. Dublin",
       "county": "Dublin",
@@ -2379,7 +2379,7 @@
     },
     {
       "id": "ah-albert-avenue",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Albert Avenue, Bray",
       "location": "Bray, Co. Wicklow",
       "county": "Wicklow",
@@ -2401,7 +2401,7 @@
     },
     {
       "id": "ah-foxwoodbarn",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Foxwood Barn, Citywest",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -2423,7 +2423,7 @@
     },
     {
       "id": "ah-kilcarbery-relet-0825",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ash Walk, Kilcarbery",
       "location": "Clondalkin, Dublin 22, Co. Dublin",
       "county": "Dublin",
@@ -2445,7 +2445,7 @@
     },
     {
       "id": "ah-ard-raithni",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ard Raithní, Bearna, Galway",
       "location": "Bearna, Co. Galway",
       "county": "Galway",
@@ -2467,7 +2467,7 @@
     },
     {
       "id": "ah-griffinpoint",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Griffin Point",
       "location": "Griffin Point, Co. Dublin",
       "county": "Dublin",
@@ -2489,7 +2489,7 @@
     },
     {
       "id": "ah-whitehaven",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Whitehaven, Northwood, Santry",
       "location": "Northwood, Co. Dublin",
       "county": "Dublin",
@@ -2511,7 +2511,7 @@
     },
     {
       "id": "ah-northgate-kilcarbery",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Northgate Hall, Kilcarbery Grange, Dublin 22",
       "location": "Clondalkin, Co. Dublin",
       "county": "Dublin",
@@ -2533,7 +2533,7 @@
     },
     {
       "id": "ah-parkland",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Parklands Parade",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -2555,7 +2555,7 @@
     },
     {
       "id": "ah-semple-woods-0625",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Semple Woods",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -2577,7 +2577,7 @@
     },
     {
       "id": "ah-griffin-point-0625",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Griffin Point",
       "location": "Griffin Point, Co. Dublin",
       "county": "Dublin",
@@ -2599,7 +2599,7 @@
     },
     {
       "id": "ah-lancastergate1",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Lancaster Gate",
       "location": "Cork City, Co. Cork",
       "county": "Cork",
@@ -2621,7 +2621,7 @@
     },
     {
       "id": "ah-longview",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Longview, Ballyvolane, Cork City",
       "location": "Ballyvolane, Co. Cork",
       "county": "Cork",
@@ -2643,7 +2643,7 @@
     },
     {
       "id": "ah-paddocks-newbridge-0425",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "The Paddocks",
       "location": "Morristown, Newbridge, Co. Kildare",
       "county": "Kildare",
@@ -2665,7 +2665,7 @@
     },
     {
       "id": "ah-allmans-view",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "Allmans View, Coolfadda",
       "location": "Bandon, Co. Cork",
       "county": "Cork",
@@ -2687,7 +2687,7 @@
     },
     {
       "id": "ah-carrigmore-woods",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Carrigmore Woods, Citywest, Dublin 24",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -2709,7 +2709,7 @@
     },
     {
       "id": "ah-foxwood-barn-2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Foxwood Barn, Citywest",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -2731,7 +2731,7 @@
     },
     {
       "id": "ah-thefairways",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "The Fairways Midleton",
       "location": "Tir Cluain, Midleton, Co. Cork",
       "county": "Cork",
@@ -2753,7 +2753,7 @@
     },
     {
       "id": "ah-glanmore-heights",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Glanmore Heights, Dún na Rí, Coosan, Athlone, Co. Westmeath",
       "location": "Athlone, Co. Westmeath",
       "county": "Westmeath",
@@ -2775,7 +2775,7 @@
     },
     {
       "id": "ah-ashes-rowans-kilcarbery",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "The Ashes and the Rowans, Kilcarbery Grange",
       "location": "Clondalkin, Dublin 22, Co. Dublin",
       "county": "Dublin",
@@ -2797,7 +2797,7 @@
     },
     {
       "id": "ah-mont",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "Griffin Point",
       "location": "Griffin Point, Co. Dublin",
       "county": "Dublin",
@@ -2819,7 +2819,7 @@
     },
     {
       "id": "ah-barnhallmeadows2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Barnhall Meadows",
       "location": "Leixlip, Co. Kildare",
       "county": "Kildare",
@@ -2841,7 +2841,7 @@
     },
     {
       "id": "ah-airton-plaza-4",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Airton Plaza",
       "location": "Belgard Road, Co. Dublin",
       "county": "Dublin",
@@ -2863,7 +2863,7 @@
     },
     {
       "id": "ah-newton-heights-2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Newton Heights",
       "location": "Lotamore, Co. Cork",
       "county": "Cork",
@@ -2885,7 +2885,7 @@
     },
     {
       "id": "ah-airton-plaza-0425",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Airton Plaza",
       "location": "Belgard Road, Co. Dublin",
       "county": "Dublin",
@@ -2907,7 +2907,7 @@
     },
     {
       "id": "ah-de-verdon",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "De Verdon Place",
       "location": "Donaghmede, Co. Dublin",
       "county": "Dublin",
@@ -2929,7 +2929,7 @@
     },
     {
       "id": "ah-effernock",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Effernock",
       "location": "Trim, Co. Meath",
       "county": "Meath",
@@ -2951,7 +2951,7 @@
     },
     {
       "id": "ah-lancaster-gate0425",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Lancaster Gate",
       "location": "Cork City, Co. Cork",
       "county": "Cork",
@@ -2973,7 +2973,7 @@
     },
     {
       "id": "ah-newton-heights",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Newton Heights",
       "location": "Lotamore, Co. Cork",
       "county": "Cork",
@@ -2995,7 +2995,7 @@
     },
     {
       "id": "ah-stoneview-walkinstown",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Stoneview",
       "location": "Walkinstown, Co. Dublin",
       "county": "Dublin",
@@ -3017,7 +3017,7 @@
     },
     {
       "id": "ah-taylor-hill",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Taylor Hill",
       "location": "Balbriggan, Co. Dublin",
       "county": "Dublin",
@@ -3039,7 +3039,7 @@
     },
     {
       "id": "ah-woodstream-ballis",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Woodstream",
       "location": "Navan, Co. Meath",
       "county": "Meath",
@@ -3061,7 +3061,7 @@
     },
     {
       "id": "ah-balmoston-donabate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Balmoston",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -3083,7 +3083,7 @@
     },
     {
       "id": "ah-paddocks-golflink",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "The Paddocks",
       "location": "Newbridge, Co. Kildare",
       "county": "Kildare",
@@ -3105,7 +3105,7 @@
     },
     {
       "id": "ah-clai-mor",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Claí Mór",
       "location": "Ballybrit, Co. Galway",
       "county": "Galway",
@@ -3127,7 +3127,7 @@
     },
     {
       "id": "ah-belin-woods",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Belin Woods",
       "location": "Newbridge, Co. Kildare",
       "county": "Kildare",
@@ -3149,7 +3149,7 @@
     },
     {
       "id": "ah-kilmartin-grove-2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -3171,7 +3171,7 @@
     },
     {
       "id": "ah-airton-plaza-2",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Airton Plaza",
       "location": "Belgard Road, Tallaght, Co. Dublin",
       "county": "Dublin",
@@ -3193,7 +3193,7 @@
     },
     {
       "id": "ah-parkside",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Parkside",
       "location": "Belmayne, Co. Dublin",
       "county": "Dublin",
@@ -3215,7 +3215,7 @@
     },
     {
       "id": "ah-cobbe-count",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Cobbe Court, Dunrovin, Donabate",
       "location": "",
       "county": "",
@@ -3237,7 +3237,7 @@
     },
     {
       "id": "ah-mount-neil",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Mount Neil",
       "location": "Carrickphierish, Co. Waterford",
       "county": "Waterford",
@@ -3259,7 +3259,7 @@
     },
     {
       "id": "ah-shanganagh-castle-estate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Land Development Agency",
       "name": "Shanganagh Castle Estate",
       "location": "Shankill, Co. Dublin",
       "county": "Dublin",
@@ -3281,7 +3281,7 @@
     },
     {
       "id": "ah-lanestown-apartments",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "Lanestown Apartments",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -3303,7 +3303,7 @@
     },
     {
       "id": "ah-lanestown-view",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "Lanestown View",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",
@@ -3325,7 +3325,7 @@
     },
     {
       "id": "ah-the-sidings",
-      "provider": "AffordableHomes.ie",
+      "provider": "Oaklee",
       "name": "The Sidings",
       "location": "Adamstown, Co. Dublin",
       "county": "Dublin",
@@ -3347,7 +3347,7 @@
     },
     {
       "id": "ah-airton-plaza",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Airton Plaza",
       "location": "Belgard Road, Tallaght, Co. Dublin",
       "county": "Dublin",
@@ -3369,7 +3369,7 @@
     },
     {
       "id": "ah-the-place",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "The Place",
       "location": "Seven Mills, Co. Dublin",
       "county": "Dublin",
@@ -3391,7 +3391,7 @@
     },
     {
       "id": "ah-barnoaks",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Barnoaks",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -3413,7 +3413,7 @@
     },
     {
       "id": "ah-the-gate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Respond",
       "name": "The Gate",
       "location": "Seven Mills, Co. Dublin",
       "county": "Dublin",
@@ -3435,7 +3435,7 @@
     },
     {
       "id": "ah-an-cnocan",
-      "provider": "AffordableHomes.ie",
+      "provider": "Cork County Council",
       "name": "An Cnocan",
       "location": "Bantry, Co. Cork",
       "county": "Cork",
@@ -3457,7 +3457,7 @@
     },
     {
       "id": "ah-woodstream",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Woodstream",
       "location": "Navan, Co. Meath",
       "county": "Meath",
@@ -3479,7 +3479,7 @@
     },
     {
       "id": "ah-ballynakelly-gate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Ballynakelly Gate",
       "location": "Newcastle, Co. Dublin",
       "county": "Dublin",
@@ -3501,7 +3501,7 @@
     },
     {
       "id": "ah-folkstown-park",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Folkstown Park",
       "location": "Balbriggan, Co. Dublin",
       "county": "Dublin",
@@ -3523,7 +3523,7 @@
     },
     {
       "id": "ah-pairc-na-manach",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Páirc Na Manach",
       "location": "Newbridge, Co. Kildare",
       "county": "Kildare",
@@ -3545,7 +3545,7 @@
     },
     {
       "id": "ah-walkers-gate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Walker's Gate",
       "location": "Kildare Town, Co. Kildare",
       "county": "Kildare",
@@ -3567,7 +3567,7 @@
     },
     {
       "id": "ah-foxwood-barn",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Foxwood Barn",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -3589,7 +3589,7 @@
     },
     {
       "id": "ah-parklands",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Parklands",
       "location": "Citywest, Co. Dublin",
       "county": "Dublin",
@@ -3611,7 +3611,7 @@
     },
     {
       "id": "ah-cluain-glasan",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Cluain Glasan",
       "location": "Ayrefield, Co. Kilkenny",
       "county": "Kilkenny",
@@ -3633,7 +3633,7 @@
     },
     {
       "id": "ah-kilcarbery-grange",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilcarbery Grange",
       "location": "Clondalkin, Dublin 22, Co. Dublin",
       "county": "Dublin",
@@ -3655,7 +3655,7 @@
     },
     {
       "id": "ah-gracefields",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Gracefields",
       "location": "Athlone, Co. Westmeath",
       "county": "Westmeath",
@@ -3677,7 +3677,7 @@
     },
     {
       "id": "ah-the-mills",
-      "provider": "AffordableHomes.ie",
+      "provider": "Circle Voluntary Housing Association",
       "name": "The Mills",
       "location": "Castletroy, Co. Limerick",
       "county": "Limerick",
@@ -3699,7 +3699,7 @@
     },
     {
       "id": "ah-kilmartin-grove",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Kilmartin Grove",
       "location": "Hollystown, Co. Dublin",
       "county": "Dublin",
@@ -3721,7 +3721,7 @@
     },
     {
       "id": "ah-cookstown-gateway",
-      "provider": "AffordableHomes.ie",
+      "provider": "Land Development Agency",
       "name": "Cookstown Gateway",
       "location": "Cookstown, Co. Dublin",
       "county": "Dublin",
@@ -3765,7 +3765,7 @@
     },
     {
       "id": "ah-de-verdon-place",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "De Verdon Place",
       "location": "Malahide Road, Co. Dublin",
       "county": "Dublin",
@@ -3787,7 +3787,7 @@
     },
     {
       "id": "ah-the-maltings",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "The Maltings",
       "location": "Portlaoise, Co. Laois",
       "county": "Laois",
@@ -3809,7 +3809,7 @@
     },
     {
       "id": "ah-farranshock-park",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Farranshock Park",
       "location": "Mullingar, Co. Westmeath",
       "county": "Westmeath",
@@ -3875,7 +3875,7 @@
     },
     {
       "id": "ah-harpur-lane",
-      "provider": "AffordableHomes.ie",
+      "provider": "Land Development Agency",
       "name": "Harpur Lane",
       "location": "Leixlip, Co. Kildare",
       "county": "Kildare",
@@ -3897,7 +3897,7 @@
     },
     {
       "id": "ah-gort-na-hinse",
-      "provider": "AffordableHomes.ie",
+      "provider": "Waterford City and County Council",
       "name": "Gort na hInse",
       "location": "Ballynaneashagh, Co. Waterford",
       "county": "Waterford",
@@ -3941,7 +3941,7 @@
     },
     {
       "id": "ah-barnhall-meadows",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Barnhall Meadows",
       "location": "Leixlip, Co. Kildare",
       "county": "Kildare",
@@ -3963,7 +3963,7 @@
     },
     {
       "id": "ah-lancaster-gate",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "Lancaster Gate",
       "location": "Cork City, Co. Cork",
       "county": "Cork",
@@ -3985,7 +3985,7 @@
     },
     {
       "id": "ah-the-paddocks",
-      "provider": "AffordableHomes.ie",
+      "provider": "Clúid Housing",
       "name": "The Paddocks",
       "location": "Skerries, Co. Dublin",
       "county": "Dublin",
@@ -4007,7 +4007,7 @@
     },
     {
       "id": "ah-semple-woods",
-      "provider": "AffordableHomes.ie",
+      "provider": "Tuath Housing",
       "name": "Semple Woods",
       "location": "Donabate, Co. Dublin",
       "county": "Dublin",

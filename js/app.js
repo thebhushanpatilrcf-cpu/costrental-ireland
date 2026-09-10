@@ -16,6 +16,16 @@ async function init() {
     eligibility = data.eligibility;
     marketComparison = data.market_comparison;
 
+    // Safety net: auto-close any listing whose application deadline has passed,
+    // even if the stored status is stale. Keeps the site honest between scrapes.
+    listings.forEach(l => {
+      const closes = parseListingDate(l.date_closes);
+      if (l.status === 'open' && closes && closes.getTime() < Date.now()) {
+        l.status = 'closed';
+        l.status_text = 'Applications Closed';
+      }
+    });
+
     // Sort: open first, then coming_soon, then closed
     listings.sort((a, b) => {
       const order = { open: 0, coming_soon: 1, closed: 2 };
@@ -38,6 +48,35 @@ async function init() {
 function getPropertyTypeIcon(type) {
   const icons = { apartment: '🏢', house: '🏡', duplex: '🏘️' };
   return icons[type] || '🏢';
+}
+
+// Parse the various date formats the source uses into a Date (or null):
+//   "2026-08-06"                       (ISO)
+//   "07 August 2026 at 14:00"          (with normal or non-breaking space)
+//   "14 September 2026"                (no time)
+//   "Mon 14 September"                 (weekday + no year -> assume current year)
+const MONTHS = {
+  january:0, february:1, march:2, april:3, may:4, june:5,
+  july:6, august:7, september:8, october:9, november:10, december:11
+};
+function parseListingDate(raw) {
+  if (!raw) return null;
+  const s = String(raw).replace(/\u00a0/g, ' ').trim();
+  // ISO yyyy-mm-dd
+  let m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (m) return new Date(+m[1], +m[2] - 1, +m[3], 12, 30);
+  // optional weekday, day, month name, optional year, optional "at HH:MM"
+  m = s.match(/(?:[A-Za-z]{3,9}\s+)?(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?(?:\s+at\s+(\d{1,2}):(\d{2}))?/);
+  if (m) {
+    const day = +m[1];
+    const mon = MONTHS[m[2].toLowerCase()];
+    if (mon === undefined) return null;
+    const year = m[3] ? +m[3] : new Date().getFullYear();
+    const hh = m[4] ? +m[4] : 12;
+    const mm = m[5] ? +m[5] : 30;
+    return new Date(year, mon, day, hh, mm);
+  }
+  return null;
 }
 
 // Image helper: some listings use an `images` array, newer ones use a single
@@ -143,7 +182,8 @@ function renderListings(items) {
 function getCountdownHTML(listing) {
   if (listing.status !== 'open' || !listing.date_closes) return '';
 
-  const closes = new Date(listing.date_closes + 'T12:30:00');
+  const closes = parseListingDate(listing.date_closes);
+  if (!closes) return '';
   const now = new Date();
   const diff = closes - now;
 
@@ -165,7 +205,8 @@ function getCountdownHTML(listing) {
 function startCountdowns() {
   setInterval(() => {
     document.querySelectorAll('.card-countdown[data-closes]').forEach(el => {
-      const closes = new Date(el.dataset.closes + 'T12:30:00');
+      const closes = parseListingDate(el.dataset.closes);
+      if (!closes) return;
       const diff = closes - new Date();
       if (diff <= 0) {
         el.innerHTML = '⚠️ Applications may have closed';

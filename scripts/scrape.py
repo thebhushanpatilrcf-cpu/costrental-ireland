@@ -171,6 +171,34 @@ def _detail_text(url):
     return "".join(p.parts), fetch(url)  # (flattened text, raw html)
 
 
+PROVIDER_LABEL_RE = re.compile(
+    r'<h3[^>]*>(?:Approved Housing Body|Landlord|Local Authority|Managing Agent|Managed by)</h3>\s*'
+    r'<p[^>]*>([^<]+)</p>',
+    re.IGNORECASE,
+)
+
+
+def detect_provider(html, flat, description):
+    """Return the real housing body/provider for a listing."""
+    m = PROVIDER_LABEL_RE.search(html)
+    if m:
+        return m.group(1).strip()
+    # Fallback: infer from description text.
+    text = (description or "") + " " + flat[:400]
+    low = text.lower()
+    if "land development agency" in low or re.search(r'\blda\b', low):
+        return "Land Development Agency"
+    if "clúid" in low or "cluid" in low:
+        return "Clúid Housing"
+    if "tuath" in low:
+        return "Tuath Housing"
+    if "respond" in low:
+        return "Respond Housing"
+    if "city council" in low or "county council" in low:
+        return "Local Authority"
+    return "AffordableHomes.ie"
+
+
 def parse_detail(url):
     p = _TextParser(); html = fetch(url); p.feed(html)
     flat = "".join(p.parts)
@@ -222,6 +250,9 @@ def parse_detail(url):
             desc = part.strip()
             break
     data["description"] = desc
+
+    # Real provider (housing body), not just the aggregator.
+    data["provider"] = detect_provider(html, flat, desc)
 
     return data
 
@@ -284,7 +315,7 @@ def build():
 
         listings.append({
             "id": make_id(url),
-            "provider": PROVIDER,
+            "provider": d.get("provider") or PROVIDER,
             "name": d["name"] or (match["name"] if match else slug_of(url)),
             "location": location,
             "county": county,
