@@ -1,0 +1,45 @@
+name: Update cost rental listings
+
+# Runs the scraper on a schedule (and on demand), commits data/listings.json when it
+# changes, and lets GitHub Pages redeploy automatically. Replaces the old laptop bot.
+
+on:
+  schedule:
+    # Twice a day at 08:15 and 18:15 UTC. Cron times are UTC.
+    - cron: "15 8 * * *"
+    - cron: "15 18 * * *"
+  workflow_dispatch: {}  # allows manual "Run workflow" from the Actions tab
+
+permissions:
+  contents: write  # needed so the action can commit the updated data file
+
+concurrency:
+  group: update-listings
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run scraper
+        run: python3 scripts/scrape.py
+
+      - name: Commit updated listings if changed
+        run: |
+          git config user.name "Cost Rental Bot"
+          git config user.email "bot@costrental.ie"
+          if git diff --quiet -- data/listings.json; then
+            echo "No listing changes."
+          else
+            git add data/listings.json
+            git commit -m "auto: update listings [$(date -u +%Y-%m-%d)]"
+            git push
+          fi
