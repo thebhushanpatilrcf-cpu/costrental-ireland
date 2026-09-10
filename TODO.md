@@ -82,10 +82,10 @@
 
 - Live site: https://costrental-ireland.netlify.app
 - Netlify dashboard: https://app.netlify.com
-- AdSense: https://www.google.com/adsense (ca-pub-9636330397610882)
+- AdSense: https://www.google.com/adsense (publisher ID stored privately)
 - Formspree (notify form): https://formspree.io/forms
-- Discord webhook (housing): https://discord.com/api/webhooks/1532351078400790611/...
-- Discord webhook (LFC tickets): https://discord.com/api/webhooks/1532327756678041632/...
+- Discord webhook (housing): stored privately — not in repo
+- Discord webhook (LFC tickets): stored privately — not in repo
 - LDA listings: https://lda.ie/affordable-homes/lda-cost-rental
 - Tuath listings: https://tuathhousing.ie/cost-rental/
 - Respond listings: https://www.respond.ie/cost-rental/
