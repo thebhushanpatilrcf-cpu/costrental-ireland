@@ -1113,6 +1113,13 @@ async function loadPurchaseData() {
       const order = { open: 0, coming_soon: 1, closed: 2 };
       return (order[a.status] || 2) - (order[b.status] || 2);
     });
+    // Populate the county filter from the data so every county with listings shows.
+    const sel = document.getElementById('purchase-filter-county');
+    if (sel) {
+      const counties = [...new Set(purchaseListings.map(l => l.county).filter(Boolean))].sort();
+      sel.innerHTML = '<option value="all">All Counties</option>' +
+        counties.map(c => `<option value="${c}">${c}</option>`).join('');
+    }
   } catch (err) {
     console.error('Failed to load purchase data:', err);
   }

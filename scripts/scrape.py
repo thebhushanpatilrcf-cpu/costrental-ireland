@@ -29,9 +29,32 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 BASE = "https://affordablehomes.ie"
-LIST_URL = BASE + "/rent/"
-CALENDAR_URL = BASE + "/rent/calendar/"
-DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "listings.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+
+# Section config: cost rental (/rent/) and affordable purchase (/buy/).
+SECTIONS = {
+    "rent": {
+        "list_url": BASE + "/rent/",
+        "calendar_url": BASE + "/rent/calendar/",
+        "detail_prefix": "/rent/",
+        "data_file": DATA_DIR / "listings.json",
+        "id_prefix": "ah-",
+        "price_key": "rent",
+    },
+    "buy": {
+        "list_url": BASE + "/buy/",
+        "calendar_url": BASE + "/buy/calendar/",
+        "detail_prefix": "/buy/",
+        "data_file": DATA_DIR / "purchase.json",
+        "id_prefix": "buy-",
+        "price_key": "price",
+    },
+}
+
+# Kept for backwards references in older helpers.
+LIST_URL = SECTIONS["rent"]["list_url"]
+CALENDAR_URL = SECTIONS["rent"]["calendar_url"]
+DATA_FILE = SECTIONS["rent"]["data_file"]
 UA = "Mozilla/5.0 (compatible; CostRentalBot/2.0; +https://costrental.ie)"
 
 STATUS_MAP = {
@@ -131,10 +154,10 @@ def parse_list_page(page_text: str):
     return rows
 
 
-def scrape_list():
+def scrape_list(list_url=LIST_URL):
     rows, seen, page, total = [], set(), 1, None
     while page <= 30:
-        url = LIST_URL if page == 1 else f"{LIST_URL}?page={page}"
+        url = list_url if page == 1 else f"{list_url}?page={page}"
         p = _TextParser(); p.feed(fetch(url))
         flat = "".join(p.parts)
         if total is None:
@@ -159,11 +182,12 @@ def scrape_list():
 # ---------------------------------------------------------------------------
 # DETAIL pages: description / image / BER / property type / dates
 # ---------------------------------------------------------------------------
-def detail_slug_urls():
-    html = fetch(CALENDAR_URL)
-    links = [l for l in dict.fromkeys(re.findall(r'href="(/rent/[^"/][^"]*/)"', html))
-             if l not in ("/rent/map/", "/rent/calendar/")]
-    return links  # list of "/rent/<slug>/"
+def detail_slug_urls(calendar_url=CALENDAR_URL, prefix="/rent/"):
+    html = fetch(calendar_url)
+    esc = re.escape(prefix)
+    links = [l for l in dict.fromkeys(re.findall(rf'href="({esc}[^"/][^"]*/)"', html))
+             if l not in (f"{prefix}map/", f"{prefix}calendar/")]
+    return links
 
 
 def _detail_text(url):
@@ -254,6 +278,11 @@ def parse_detail(url):
     # Real provider (housing body), not just the aggregator.
     data["provider"] = detect_provider(html, flat, desc)
 
+    # Location from the structured "Location" field on the detail page (fallback
+    # for when the list-page row didn't match).
+    mloc = re.search(r'<h3[^>]*>Location</h3>\s*<p[^>]*>([^<]+)</p>', html, re.IGNORECASE)
+    data["location"] = mloc.group(1).strip() if mloc else ""
+
     return data
 
 
@@ -268,27 +297,28 @@ def norm(s):
 # ---------------------------------------------------------------------------
 # Build + write
 # ---------------------------------------------------------------------------
-def make_id(url):
-    return "ah-" + slug_of(url)
+def make_id(url, prefix="ah-"):
+    return prefix + slug_of(url)
 
 
-def build():
-    print("Scraping list pages for authoritative statuses...")
-    list_rows, total = scrape_list()
+def build(section):
+    cfg = SECTIONS[section]
+    is_buy = section == "buy"
+    print(f"[{section}] Scraping list pages for authoritative statuses...")
+    list_rows, total = scrape_list(cfg["list_url"])
     print(f"  list rows: {len(list_rows)} (source total {total})")
 
-    print("Collecting detail URLs from calendar view...")
-    urls = detail_slug_urls()
+    print(f"[{section}] Collecting detail URLs from calendar view...")
+    urls = detail_slug_urls(cfg["calendar_url"], cfg["detail_prefix"])
     print(f"  detail URLs: {len(urls)}")
 
-    # Index list rows by normalized name for matching to detail pages.
     list_by_name = {}
     for r in list_rows:
         list_by_name.setdefault(norm(r["name"]), []).append(r)
 
     listings = []
     used_list_keys = set()
-    print("Fetching detail pages (rich data)...")
+    print(f"[{section}] Fetching detail pages (rich data)...")
     for n, url in enumerate(urls, 1):
         try:
             d = parse_detail(BASE + url)
@@ -296,45 +326,66 @@ def build():
             print(f"  ! detail failed {url}: {e}")
             continue
 
-        # Match to a list row (for authoritative status) by name.
         match = None
-        cands = list_by_name.get(norm(d["name"]), [])
-        for c in cands:
-            ck = id(c)
-            if ck not in used_list_keys:
-                match = c; used_list_keys.add(ck); break
-        if match is None and cands:
-            match = cands[0]
+        for c in list_by_name.get(norm(d["name"]), []):
+            if id(c) not in used_list_keys:
+                match = c; used_list_keys.add(id(c)); break
+        if match is None:
+            cands = list_by_name.get(norm(d["name"]), [])
+            match = cands[0] if cands else None
 
         status = match["status"] if match else "open"
         status_text = match["status_text"] if match else "Applications Open"
-        location = match["location"] if match else ""
-        county = match["county"] if match else county_from_location(location)
-        rent = d["rent"] or (match["rent"] if match else None)
-        market = MARKET_RENT_BY_COUNTY.get(county)
+        location = (match["location"] if match else "") or d.get("location", "")
+        county = (match["county"] if match else "") or county_from_location(location)
+        amount = d["rent"] or (match["rent"] if match else None)  # rent or price
 
-        listings.append({
-            "id": make_id(url),
-            "provider": d.get("provider") or PROVIDER,
-            "name": d["name"] or (match["name"] if match else slug_of(url)),
-            "location": location,
-            "county": county,
-            "bedrooms": d["bedrooms"],
-            "rent": rent,
-            "status": status,
-            "status_text": status_text,
-            "description": d["description"],
-            "amenities": [],
-            "parking": None,
-            "url": BASE + url,
-            "image": d["image"],
-            "provider_url": PROVIDER_URL,
-            "ber_rating": d["ber_rating"],
-            "property_type": d["property_type"],
-            "date_closes": d["date_closes"],
-            "date_opens": d["date_opens"],
-            "market_rent": market if (market and rent and market > rent) else None,
-        })
+        if is_buy:
+            listing = {
+                "id": make_id(url, "buy-"),
+                "provider": d.get("provider") or PROVIDER,
+                "name": d["name"] or (match["name"] if match else slug_of(url)),
+                "location": location,
+                "county": county,
+                "bedrooms": d["bedrooms"],
+                "price": amount,
+                "status": status,
+                "status_text": status_text,
+                "description": d["description"],
+                "availability": "",
+                "url": BASE + url,
+                "image": d["image"],
+                "provider_url": PROVIDER_URL,
+                "ber_rating": d["ber_rating"],
+                "property_type": d["property_type"],
+                "date_closes": d["date_closes"],
+                "date_opens": d["date_opens"],
+            }
+        else:
+            market = MARKET_RENT_BY_COUNTY.get(county)
+            listing = {
+                "id": make_id(url, "ah-"),
+                "provider": d.get("provider") or PROVIDER,
+                "name": d["name"] or (match["name"] if match else slug_of(url)),
+                "location": location,
+                "county": county,
+                "bedrooms": d["bedrooms"],
+                "rent": amount,
+                "status": status,
+                "status_text": status_text,
+                "description": d["description"],
+                "amenities": [],
+                "parking": None,
+                "url": BASE + url,
+                "image": d["image"],
+                "provider_url": PROVIDER_URL,
+                "ber_rating": d["ber_rating"],
+                "property_type": d["property_type"],
+                "date_closes": d["date_closes"],
+                "date_opens": d["date_opens"],
+                "market_rent": market if (market and amount and market > amount) else None,
+            }
+        listings.append(listing)
         if n % 20 == 0:
             print(f"    ...{n}/{len(urls)}")
         time.sleep(0.25)
@@ -342,28 +393,46 @@ def build():
     return listings, total
 
 
-def main():
-    listings, total = build()
+def write_section(section):
+    from collections import Counter
+    cfg = SECTIONS[section]
+    listings, total = build(section)
     if len(listings) < 10:
-        print(f"ERROR: only {len(listings)} listings scraped; aborting to protect data.",
-              file=sys.stderr)
-        sys.exit(1)
+        print(f"ERROR [{section}]: only {len(listings)} listings scraped; "
+              f"aborting to protect data.", file=sys.stderr)
+        return False
 
-    existing = json.loads(DATA_FILE.read_text())
+    data_file = cfg["data_file"]
+    existing = json.loads(data_file.read_text()) if data_file.exists() else {}
     out = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "listings": listings,
-        "providers": existing.get("providers", []),
-        "eligibility": existing.get("eligibility", {}),
-        "market_comparison": existing.get("market_comparison", {}),
     }
-    from collections import Counter
+    # The cost-rental file also carries static reference blocks the site uses.
+    if section == "rent":
+        out["providers"] = existing.get("providers", [])
+        out["eligibility"] = existing.get("eligibility", {})
+        out["market_comparison"] = existing.get("market_comparison", {})
+
+    data_file.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
     counts = dict(Counter(l["status"] for l in listings))
-    DATA_FILE.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
-    print(f"\nWrote {len(listings)} rich listings. Statuses: {counts}")
     with_img = sum(1 for l in listings if l["image"])
-    with_ber = sum(1 for l in listings if l["ber_rating"])
-    print(f"  with image: {with_img} | with BER: {with_ber}")
+    print(f"[{section}] Wrote {len(listings)} listings -> {data_file.name}. "
+          f"Statuses: {counts} | with image: {with_img}")
+    return True
+
+
+def main():
+    # Which sections to run: default both; or pass "rent"/"buy" as an argument.
+    sections = sys.argv[1:] or ["rent", "buy"]
+    ok = True
+    for s in sections:
+        if s not in SECTIONS:
+            print(f"unknown section {s!r}; valid: {list(SECTIONS)}", file=sys.stderr)
+            ok = False
+            continue
+        ok = write_section(s) and ok
+    sys.exit(0 if ok else 1)
 
 
 if __name__ == "__main__":

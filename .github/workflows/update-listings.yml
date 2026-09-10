@@ -29,17 +29,17 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run scraper
-        run: python3 scripts/scrape.py
+      - name: Run scraper (cost rental + affordable purchase)
+        run: python3 scripts/scrape.py rent buy
 
       - name: Commit updated listings if changed
         run: |
           git config user.name "Cost Rental Bot"
           git config user.email "bot@costrental.ie"
-          if git diff --quiet -- data/listings.json; then
+          if git diff --quiet -- data/listings.json data/purchase.json; then
             echo "No listing changes."
           else
-            git add data/listings.json
+            git add data/listings.json data/purchase.json
             git commit -m "auto: update listings [$(date -u +%Y-%m-%d)]"
             git push
           fi

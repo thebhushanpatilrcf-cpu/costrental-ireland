@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-10T16:09:25Z",
+  "last_updated": "2026-09-10T16:27:21Z",
   "listings": [
     {
       "id": "ah-folkstown",
@@ -3217,8 +3217,8 @@
       "id": "ah-cobbe-count",
       "provider": "Tuath Housing",
       "name": "Cobbe Court, Dunrovin, Donabate",
-      "location": "",
-      "county": "",
+      "location": "Donabate, Co. Dublin",
+      "county": "Dublin",
       "bedrooms": "1 & 2 Bed",
       "rent": 1495,
       "status": "open",
@@ -3233,7 +3233,7 @@
       "property_type": "apartment",
       "date_closes": null,
       "date_opens": null,
-      "market_rent": null
+      "market_rent": 2300
     },
     {
       "id": "ah-mount-neil",
