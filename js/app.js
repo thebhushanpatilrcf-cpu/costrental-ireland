@@ -87,6 +87,18 @@ function autoCloseExpired(items, closedText) {
   return items;
 }
 
+// Rent display: show a range ("from €X" / "€X–€Y") when a collapsed listing spans
+// multiple unit prices, otherwise the single rent.
+function getRentDisplay(l) {
+  if (l.price_from) {
+    if (l.price_to && l.price_to !== l.price_from) {
+      return '€' + l.price_from.toLocaleString() + '–€' + l.price_to.toLocaleString();
+    }
+    return 'from €' + l.price_from.toLocaleString();
+  }
+  return l.rent ? '€' + l.rent.toLocaleString() : 'TBC';
+}
+
 // Image helper: some listings use an `images` array, newer ones use a single
 // `image` string. Return a usable src (or '' so onerror hides it) without throwing.
 function getListingImage(listing) {
@@ -199,7 +211,7 @@ function renderListings(items) {
           ${countdown}
           <div class="card-details">
             <div class="card-rent">
-              ${listing.rent ? '€' + listing.rent.toLocaleString() : 'TBC'}
+              ${getRentDisplay(listing)}
               <span>/month</span>
             </div>
             <div class="card-beds">🛏️ ${listing.bedrooms}</div>
@@ -1172,7 +1184,11 @@ function renderPurchaseListings(items) {
 
   grid.innerHTML = items.map(listing => {
     const badgeClass = listing.status === 'open' ? 'badge-open' : 'badge-coming_soon';
-    const priceDisplay = listing.price ? '\u20ac' + listing.price.toLocaleString() : 'TBC';
+    const priceDisplay = listing.price_from
+      ? (listing.price_to && listing.price_to !== listing.price_from
+          ? '\u20ac' + listing.price_from.toLocaleString() + '\u2013\u20ac' + listing.price_to.toLocaleString()
+          : 'from \u20ac' + listing.price_from.toLocaleString())
+      : (listing.price ? '\u20ac' + listing.price.toLocaleString() : 'TBC');
     const dateInfo = listing.date_closes
       ? '<div class="card-countdown">Applications close: ' + listing.date_closes + '</div>'
       : listing.date_opens

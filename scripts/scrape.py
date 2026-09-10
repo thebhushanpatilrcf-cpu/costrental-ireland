@@ -233,10 +233,13 @@ def parse_detail(url):
     name = re.split(r"\s*\|\s*", name)[0].strip()  # drop "| Starter Home Supports"
     data["name"] = name
 
-    # Main image: first /uploads/images/ that isn't a BER badge or logo
+    # Main image: first /uploads/images/ that isn't a BER badge or logo.
+    # NOTE: affordablehomes.ie/uploads/... 301-redirects to http://newstarterhomes.ie,
+    # and an HTTPS page can't load that (mixed content), so point straight at the
+    # HTTPS newstarterhomes.ie origin that actually serves the image.
     imgs = [i for i in re.findall(r'(/uploads/images/[^"\')\s]+)', html)
             if "/bers/" not in i and "/logos/" not in i and "/headers/" not in i]
-    data["image"] = (BASE + unescape(imgs[0])) if imgs else ""
+    data["image"] = ("https://newstarterhomes.ie" + unescape(imgs[0])) if imgs else ""
 
     # BER: from the ber badge image (/uploads/images/bers/a2.png) or text
     mber = re.search(r'/uploads/images/bers/([a-cA-C][0-9]?)\.png', html)
@@ -318,8 +321,12 @@ def build(section):
 
     listings = []
     used_list_keys = set()
+    seen_urls = set()
     print(f"[{section}] Fetching detail pages (rich data)...")
     for n, url in enumerate(urls, 1):
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
         try:
             d = parse_detail(BASE + url)
         except Exception as e:  # noqa: BLE001
@@ -390,7 +397,52 @@ def build(section):
             print(f"    ...{n}/{len(urls)}")
         time.sleep(0.25)
 
+    listings = collapse_duplicates(listings, price_key=cfg["price_key"])
     return listings, total
+
+
+def collapse_duplicates(listings, price_key="rent"):
+    """
+    The source lists the same development multiple times (different phases / unit
+    types / re-listings). Collapse rows that are the same development + location +
+    status into a single card, keeping the cheapest as representative and recording
+    a price range (price_from / price_to) when they differ. Distinct developments
+    and distinct statuses (e.g. an open round vs a closed round) are preserved.
+    """
+    def norm(s):
+        return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+    def base_name(n):
+        return re.sub(r"\s*\(.*?\)\s*", "", n or "").strip()
+
+    def name_key(n):
+        # Collapse "Kilmartin Grove" and "Kilmartin Grove, Hollystown, Co. Dublin"
+        # to the same development by taking the part before the first comma.
+        return norm(base_name(n).split(",")[0])
+
+    groups = {}
+    order = []
+    for l in listings:
+        key = (name_key(l.get("name")), norm(l.get("location")), l.get("status"))
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(l)
+
+    out = []
+    for key in order:
+        items = groups[key]
+        items.sort(key=lambda x: (x.get(price_key) or 10**9))
+        rep = dict(items[0])
+        prices = [x.get(price_key) for x in items if x.get(price_key)]
+        if len(items) > 1 and prices:
+            lo, hi = min(prices), max(prices)
+            rep["price_from"] = lo
+            rep["price_to"] = hi if hi != lo else None
+            # Prefer the longest (most descriptive) name among the group.
+            rep["name"] = max((x.get("name") or "" for x in items), key=len)
+        out.append(rep)
+    return out
 
 
 def write_section(section):
