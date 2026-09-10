@@ -147,8 +147,13 @@
       document.title = `${listing.name} — Cost Rental Ireland`;
       document.getElementById('breadcrumb-name').textContent = listing.name;
 
+      // Normalize images: some listings use `images` array, newer ones a single `image`.
+      const listingImages = (Array.isArray(listing.images) && listing.images.length)
+        ? listing.images
+        : (listing.image ? [listing.image] : []);
+
       // Hero
-      document.getElementById('hero-image').src = listing.images[0];
+      document.getElementById('hero-image').src = listingImages[0] || '';
       document.getElementById('hero-image').alt = listing.name;
       document.getElementById('hero-title').textContent = listing.name;
       document.getElementById('hero-location').textContent = '📍 ' + listing.location;
@@ -162,7 +167,7 @@
 
       // Gallery
       const gallery = document.getElementById('gallery-grid');
-      gallery.innerHTML = listing.images.map(img =>
+      gallery.innerHTML = listingImages.map(img =>
         `<img src="${img}" alt="${listing.name}" loading="lazy">`
       ).join('');
 

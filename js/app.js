@@ -40,6 +40,14 @@ function getPropertyTypeIcon(type) {
   return icons[type] || '🏢';
 }
 
+// Image helper: some listings use an `images` array, newer ones use a single
+// `image` string. Return a usable src (or '' so onerror hides it) without throwing.
+function getListingImage(listing) {
+  if (Array.isArray(listing.images) && listing.images.length) return listing.images[0];
+  if (listing.image) return listing.image;
+  return '';
+}
+
 // Populate filter dropdowns
 function populateFilters() {
   const locations = [...new Set(listings.map(l => l.county))].sort();
@@ -97,7 +105,7 @@ function renderListings(items) {
     <div class="listing-card status-${listing.status}">
       <a href="pages/listing.html?id=${listing.id}" class="card-link">
         <div class="card-image">
-          <img src="${listing.images[0]}" alt="${listing.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-image')">
+          <img src="${getListingImage(listing)}" alt="${listing.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-image')">
           <span class="card-badge badge-${listing.status}">${listing.status_text}</span>
         </div>
         <div class="card-body">
@@ -637,7 +645,7 @@ function renderSavedSection() {
     html += '<div class="listing-card status-' + listing.status + '">' +
       '<a href="pages/listing.html?id=' + listing.id + '" class="card-link">' +
         '<div class="card-image">' +
-          '<img src="' + listing.images[0] + '" alt="' + listing.name + '" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.classList.add(\'no-image\')">' +
+          '<img src="' + getListingImage(listing) + '" alt="' + listing.name + '" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.classList.add(\'no-image\')">' +
           '<span class="card-badge badge-' + listing.status + '">' + listing.status_text + '</span>' +
         '</div>' +
         '<div class="card-body">' +

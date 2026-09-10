@@ -63,7 +63,7 @@ function addMarkers() {
 
     const popupContent = `
       <div style="min-width: 200px; font-family: Inter, sans-serif;">
-        <img src="${listing.images[0]}" style="width: 100%; height: 100px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" onerror="this.style.display='none'">
+        <img src="${(typeof getListingImage === 'function' ? getListingImage(listing) : (listing.images && listing.images[0]) || listing.image || '')}" style="width: 100%; height: 100px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" onerror="this.style.display='none'">
         <div style="font-size: 12px; color: #6b7280; text-transform: uppercase;">${listing.provider}</div>
         <div style="font-size: 14px; font-weight: 700; margin: 4px 0;">${listing.name}</div>
         <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px;">📍 ${listing.location}</div>
