@@ -75,7 +75,9 @@ MARKET_RENT_BY_COUNTY = {
 }
 
 
-def fetch(url: str, retries: int = 3) -> str:
+def fetch(url: str, retries: int = 5) -> str:
+    """Fetch with exponential backoff. The source rate-limits aggressive scraping
+    (Connection refused), so we retry with growing delays before giving up."""
     last = None
     for attempt in range(retries):
         try:
@@ -84,7 +86,8 @@ def fetch(url: str, retries: int = 3) -> str:
                 return resp.read().decode("utf-8", errors="replace")
         except Exception as e:  # noqa: BLE001
             last = e
-            time.sleep(1 + attempt)
+            # Exponential backoff: 2s, 4s, 8s, 16s, 32s — lets a rate-limit cool off.
+            time.sleep(2 ** (attempt + 1))
     raise RuntimeError(f"fetch failed for {url}: {last}")
 
 
@@ -392,10 +395,16 @@ def build(section):
                 "date_opens": d["date_opens"],
                 "market_rent": market if (market and amount and market > amount) else None,
             }
+        # Drop junk rows: a bad parse can yield a placeholder like "Read More" or
+        # an empty name. Never publish those.
+        nm = (listing.get("name") or "").strip().lower()
+        if not nm or nm in ("read more", "read", "more") or len(nm) < 3:
+            continue
+
         listings.append(listing)
         if n % 20 == 0:
             print(f"    ...{n}/{len(urls)}")
-        time.sleep(0.25)
+        time.sleep(0.6)  # polite pacing to avoid the source rate-limiting us
 
     listings = collapse_duplicates(listings, price_key=cfg["price_key"])
     return listings, total
@@ -420,10 +429,14 @@ def collapse_duplicates(listings, price_key="rent"):
         # to the same development by taking the part before the first comma.
         return norm(base_name(n).split(",")[0])
 
+    # Collapse by development name + COUNTY + status. Using county (not full
+    # location) merges near-duplicate rows that differ only in address detail
+    # (e.g. "Bantry, Co. Cork" vs "Milleencoola, Bantry, Co. Cork") while keeping
+    # genuinely different developments in different counties separate.
     groups = {}
     order = []
     for l in listings:
-        key = (name_key(l.get("name")), norm(l.get("location")), l.get("status"))
+        key = (name_key(l.get("name")), norm(l.get("county")), l.get("status"))
         if key not in groups:
             groups[key] = []
             order.append(key)
@@ -435,12 +448,14 @@ def collapse_duplicates(listings, price_key="rent"):
         items.sort(key=lambda x: (x.get(price_key) or 10**9))
         rep = dict(items[0])
         prices = [x.get(price_key) for x in items if x.get(price_key)]
-        if len(items) > 1 and prices:
-            lo, hi = min(prices), max(prices)
-            rep["price_from"] = lo
-            rep["price_to"] = hi if hi != lo else None
-            # Prefer the longest (most descriptive) name among the group.
+        if len(items) > 1:
+            if prices:
+                lo, hi = min(prices), max(prices)
+                rep["price_from"] = lo
+                rep["price_to"] = hi if hi != lo else None
+            # Prefer the longest (most descriptive) name and location in the group.
             rep["name"] = max((x.get("name") or "" for x in items), key=len)
+            rep["location"] = max((x.get("location") or "" for x in items), key=len)
         out.append(rep)
     return out
 
