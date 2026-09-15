@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T21:58:59Z",
+  "last_updated": "2026-09-15T13:42:32Z",
   "listings": [
     {
       "id": "buy-barracksfieldwest2",
@@ -9,8 +9,8 @@
       "county": "Kildare",
       "bedrooms": "1, 2 & 3 Bed",
       "price": 243477,
-      "status": "open",
-      "status_text": "Applications Open",
+      "status": "closed",
+      "status_text": "Applications Closed",
       "description": "Nestled in the heart of Naas, County Kildare, the second phase of Barracksfield West compromises of 7 x three-bed houses, 7 x two-bed duplexes and 11 x one-bed apartments. The Land Development Agency in partnership with Kildare County Council are offering these homes to purchasers under the Local Authority Affordable Purchase Scheme.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/barracksfieldwest2/",
@@ -19,7 +19,9 @@
       "ber_rating": "A2",
       "property_type": "house",
       "date_closes": null,
-      "date_opens": null
+      "date_opens": null,
+      "price_from": 243477,
+      "price_to": null
     },
     {
       "id": "buy-railwayclose",
@@ -1330,26 +1332,6 @@
       "provider_url": "https://affordablehomes.ie",
       "ber_rating": "A1",
       "property_type": "apartment",
-      "date_closes": null,
-      "date_opens": null
-    },
-    {
-      "id": "buy-barracksfieldwest",
-      "provider": "Kildare County Council",
-      "name": "Barracksfield West",
-      "location": "Naas, Co. Kildare",
-      "county": "Kildare",
-      "bedrooms": "1, 2 & 3 Bed",
-      "price": 243477,
-      "status": "closed",
-      "status_text": "Applications Closed",
-      "description": "Nestled in the heart of Naas, County Kildare, the first phase of Barracksfield West compromises of 42 x three-bed houses, 12 x two-bed duplexes and 12 x one-bed apartments. The Land Development Agency in partnership with Kildare County Council are offering these homes to purchasers under the Local Authority Affordable Purchase Scheme.",
-      "availability": "",
-      "url": "https://affordablehomes.ie/buy/barracksfieldwest/",
-      "image": "https://newstarterhomes.ie/uploads/images/Barrcks%20Field/Barracksfield-West-1_2.jpg",
-      "provider_url": "https://affordablehomes.ie",
-      "ber_rating": "A2",
-      "property_type": "house",
       "date_closes": null,
       "date_opens": null
     },
