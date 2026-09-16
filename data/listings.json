@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15T23:49:48Z",
+  "last_updated": "2026-09-16T08:04:33Z",
   "listings": [
     {
       "id": "ah-furrows",
@@ -2468,8 +2468,8 @@
       "county": "Meath",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2485,8 +2485,8 @@
       "county": "Cork",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
