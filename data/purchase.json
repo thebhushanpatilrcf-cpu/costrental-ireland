@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-09-20T20:58:29Z",
+  "last_updated": "2026-09-21T15:15:58Z",
   "listings": [
-    {
-      "id": "buy-coolameadows",
-      "provider": "Westmeath County Council",
-      "name": "Coola Meadows, Kilbeggan",
-      "location": "Kilbeggan, Co. Westmeath",
-      "county": "Westmeath",
-      "bedrooms": "2 & 3 Bed",
-      "price": 265000,
-      "status": "open",
-      "status_text": "Applications Open",
-      "description": "Westmeath County Council, in partnership with Brennan McCann Developments, are delighted to announce the launch of a Local Authority Affordable Purchase Scheme at Coola Meadows, Kilbeggan, Co. Westmeath.",
-      "availability": "",
-      "url": "https://affordablehomes.ie/buy/coolameadows/",
-      "image": "https://newstarterhomes.ie/uploads/images/properties/header.jpg",
-      "provider_url": "https://affordablehomes.ie",
-      "ber_rating": "",
-      "property_type": "apartment",
-      "date_closes": null,
-      "date_opens": null,
-      "price_from": 265000,
-      "price_to": 275000
-    },
     {
       "id": "buy-osc",
       "provider": "Dublin City Council",
@@ -324,6 +302,28 @@
       "property_type": "apartment",
       "date_closes": null,
       "date_opens": null
+    },
+    {
+      "id": "buy-coolameadows",
+      "provider": "Westmeath County Council",
+      "name": "Coola Meadows, Kilbeggan",
+      "location": "Kilbeggan, Co. Westmeath",
+      "county": "Westmeath",
+      "bedrooms": "2 & 3 Bed",
+      "price": 265000,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "Westmeath County Council, in partnership with Brennan McCann Developments, are delighted to announce the launch of a Local Authority Affordable Purchase Scheme at Coola Meadows, Kilbeggan, Co. Westmeath.",
+      "availability": "",
+      "url": "https://affordablehomes.ie/buy/coolameadows/",
+      "image": "https://newstarterhomes.ie/uploads/images/properties/header.jpg",
+      "provider_url": "https://affordablehomes.ie",
+      "ber_rating": "",
+      "property_type": "apartment",
+      "date_closes": null,
+      "date_opens": null,
+      "price_from": 265000,
+      "price_to": 275000
     },
     {
       "id": "buy-railwayclose",
