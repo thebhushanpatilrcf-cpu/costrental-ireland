@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T21:54:11Z",
+  "last_updated": "2026-09-25T10:49:55Z",
   "listings": [
     {
       "id": "ah-millers",
@@ -2659,6 +2659,42 @@
       "parking": null,
       "url": "https://www.cluid.ie/property/longview-phase-2/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/09/Longview-CGI-3-Bed-End-Terrace-540x340.png",
+      "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-grang",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Maynooth, Co. Kildare",
+      "county": "Kildare",
+      "bedrooms": "1 Bed",
+      "rent": 1425,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/grang/",
+      "image": "https://affordablehomes.ie/uploads/images/The%20Grange%20-%20Phase%20Two%20-%20ONE%20BED%20-%20Outside%20of%20block%202%20M.jpg",
+      "ber_rating": "A",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "30 September 2026 at 09:00"
+    },
+    {
+      "id": "cluid-cluain-glasan-sept26",
+      "provider": "Clúid Housing",
+      "name": "Cluain Glasan",
+      "location": "Granges Road, Kilkenny",
+      "county": "Dublin",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/cluain-glasan-sept26/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2024/05/outside-of-house-three-bedroom-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
     }
   ],
