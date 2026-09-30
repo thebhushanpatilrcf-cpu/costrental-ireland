@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T15:08:07Z",
+  "last_updated": "2026-09-30T22:24:31Z",
   "listings": [
     {
       "id": "buy-roxborough",
@@ -9,8 +9,8 @@
       "county": "Wexford",
       "bedrooms": "2, 3 & 4 Bed",
       "price": 235000,
-      "status": "open",
-      "status_text": "Applications Open",
+      "status": "closed",
+      "status_text": "Applications Closed",
       "description": "Wexford County Council, in partnership with Colm Neville Construction, is proud to present a new limited phase of high-quality homes at Roxborough Manor, Mulgannon, Wexford.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/roxborough/",
