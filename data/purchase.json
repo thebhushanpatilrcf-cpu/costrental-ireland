@@ -1,26 +1,6 @@
 {
-  "last_updated": "2026-10-07T15:46:39Z",
+  "last_updated": "2026-10-07T23:17:56Z",
   "listings": [
-    {
-      "id": "buy-lakeview",
-      "provider": "Tipperary County Council",
-      "name": "Lakeview, Carrick on Suir, Co Tipperary",
-      "location": "Carrick on Suir, Co. Tipperary",
-      "county": "Tipperary",
-      "bedrooms": "3 Bed",
-      "price": 309326,
-      "status": "closed",
-      "status_text": "Applications Closed",
-      "description": "Carrick-on-Suir is a historic market town located in the south-east of County Tipperary on the banks   of the River Suir. Situated approximately 21 km east of Clonmel and 27 km north-west of Waterford   City, the town serves as an important service, employment and cultural centre for the surrounding   rural hinterland. The town has a population of approximately 5,750 people according to the 2022   Census.",
-      "availability": "",
-      "url": "https://affordablehomes.ie/buy/lakeview/",
-      "image": "https://newstarterhomes.ie/uploads/images/Lakeview%2C%20Carrick%20on%20Suir%20-%203%20Bed.jpg",
-      "provider_url": "https://affordablehomes.ie",
-      "ber_rating": "A",
-      "property_type": "house",
-      "date_closes": null,
-      "date_opens": null
-    },
     {
       "id": "buy-fairy",
       "provider": "Meath County Council",
@@ -162,6 +142,26 @@
       "date_opens": null,
       "price_from": 335000,
       "price_to": null
+    },
+    {
+      "id": "buy-lakeview",
+      "provider": "Tipperary County Council",
+      "name": "Lakeview, Carrick on Suir, Co Tipperary",
+      "location": "Carrick on Suir, Co. Tipperary",
+      "county": "Tipperary",
+      "bedrooms": "3 Bed",
+      "price": 309326,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Carrick-on-Suir is a historic market town located in the south-east of County Tipperary on the banks   of the River Suir. Situated approximately 21 km east of Clonmel and 27 km north-west of Waterford   City, the town serves as an important service, employment and cultural centre for the surrounding   rural hinterland. The town has a population of approximately 5,750 people according to the 2022   Census.",
+      "availability": "",
+      "url": "https://affordablehomes.ie/buy/lakeview/",
+      "image": "https://newstarterhomes.ie/uploads/images/Lakeview%2C%20Carrick%20on%20Suir%20-%203%20Bed.jpg",
+      "provider_url": "https://affordablehomes.ie",
+      "ber_rating": "A",
+      "property_type": "house",
+      "date_closes": null,
+      "date_opens": null
     },
     {
       "id": "buy-cloverlawn",
