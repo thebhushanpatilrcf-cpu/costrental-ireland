@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T22:53:52Z",
+  "last_updated": "2026-10-07T15:46:39Z",
   "listings": [
     {
       "id": "buy-lakeview",
@@ -9,8 +9,8 @@
       "county": "Tipperary",
       "bedrooms": "3 Bed",
       "price": 309326,
-      "status": "open",
-      "status_text": "Applications Open",
+      "status": "closed",
+      "status_text": "Applications Closed",
       "description": "Carrick-on-Suir is a historic market town located in the south-east of County Tipperary on the banks   of the River Suir. Situated approximately 21 km east of Clonmel and 27 km north-west of Waterford   City, the town serves as an important service, employment and cultural centre for the surrounding   rural hinterland. The town has a population of approximately 5,750 people according to the 2022   Census.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/lakeview/",
@@ -154,7 +154,7 @@
       "description": "Wicklow County Council proudly presents 42 new homes for sale at Ballycomyn, Blessington, Co. Wicklow. Thirty x 2-bedroom and twelve x 3-bedroom homes are being made available for sale, supported by the Department of Housing, Local Government and Heritage, and in partnership with Cairn Homes through the affordable purchase arrangements under the Affordable Housing Act 2021 and associated regulations",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/ballycomyn1/",
-      "image": "https://newstarterhomes.ie/uploads/images/properties/header.jpg",
+      "image": "https://newstarterhomes.ie/uploads/images/Ballycomyn%20Homes%20Photo.jpg",
       "provider_url": "https://affordablehomes.ie",
       "ber_rating": "",
       "property_type": "apartment",
@@ -735,8 +735,8 @@
       "county": "Galway",
       "bedrooms": "1 Bed",
       "price": 234980,
-      "status": "closed",
-      "status_text": "Applications Closed",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "Red Fox Residential proudly presents 2 new homes for sale at Radharc Na Tornóige, Headford Road, Galway City. Two no. 1 bed apartments on the ground floor (no parking space)  are being made available for sale in partnership with Galway City Council through the affordable purchase arrangements, under the Affordable Housing Act 2021 and associated regulations.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/radharcnatornoige/",
@@ -745,9 +745,7 @@
       "ber_rating": "",
       "property_type": "apartment",
       "date_closes": null,
-      "date_opens": null,
-      "price_from": 234980,
-      "price_to": null
+      "date_opens": null
     },
     {
       "id": "buy-bellfielddrive",
@@ -1067,6 +1065,26 @@
       "image": "https://newstarterhomes.ie/uploads/images/Leargan%20Kilmacthomas.png",
       "provider_url": "https://affordablehomes.ie",
       "ber_rating": "A2",
+      "property_type": "apartment",
+      "date_closes": null,
+      "date_opens": null
+    },
+    {
+      "id": "buy-headfordroad",
+      "provider": "Galway City Council",
+      "name": "Radharc Na Tornoige",
+      "location": "Headford Road, Co. Galway",
+      "county": "Galway",
+      "bedrooms": "1, 2 & 3 Bed",
+      "price": 234980,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Red Fox Residential proudly presents 29 new homes for sale at Radharc Na Tornóige, Headford Road, Galway City. Eight no. 1 bed apartments on the ground floor (no parking space) Five no. 2 bed apartments on the ground floor (1 parking space) Ten no. 2 bed duplex homes (1 parking space) and six no. 3 bed Duplex homes (1 parking space) are being made available for sale in partnership with Galway City Council through the affordable purchase arrangements, under the Affordable Housing Act 2021 and associated regulations.",
+      "availability": "",
+      "url": "https://affordablehomes.ie/buy/headfordroad/",
+      "image": "https://newstarterhomes.ie/uploads/images/Block%20B%20PC.png",
+      "provider_url": "https://affordablehomes.ie",
+      "ber_rating": "",
       "property_type": "apartment",
       "date_closes": null,
       "date_opens": null
