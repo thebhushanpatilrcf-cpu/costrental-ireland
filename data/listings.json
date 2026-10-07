@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T01:08:31Z",
+  "last_updated": "2026-10-07T14:57:11Z",
   "listings": [
     {
       "id": "ah-cooper",
@@ -2517,8 +2517,8 @@
       "county": "Cork",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2534,8 +2534,8 @@
       "county": "Meath",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2576,6 +2576,25 @@
       "url": "https://www.cluid.ie/property/the-grange-phase-2/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/09/The-Grange-PhaseTwo-onebed-external-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-grang",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Maynooth, Co. Kildare",
+      "county": "Kildare",
+      "bedrooms": "1 Bed",
+      "rent": 1425,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/grang/",
+      "image": "https://affordablehomes.ie/uploads/images/The%20Grange%20-%20Phase%20Two%20-%20ONE%20BED%20-%20Outside%20of%20block%202%20M.jpg",
+      "ber_rating": "A",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "14 October 2026 at 17:00"
     }
   ],
   "providers": [
