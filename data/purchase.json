@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T23:17:56Z",
+  "last_updated": "2026-10-08T15:46:01Z",
   "listings": [
     {
       "id": "buy-fairy",
@@ -9,9 +9,9 @@
       "county": "Meath",
       "bedrooms": "2 & 3 Bed",
       "price": 367000,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
-      "description": "Fairywood, Ratoath Co. Meath applications will be open from 12:00 on the 8th of October 2026.",
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "At the centre of the community is a wealth of local amenities, from excellent preschool facilities to   primary & secondary schools, to a wide range of sporting facilities, including GAA, Football, Rugby,   Athletics and nearby golf courses, to name but a few. The vibrant town centre offers cafés,   restaurants, shops and everyday services. Surrounded by the beautiful countryside of the Boyne   Valley and just a short commute from Dublin. Ratoath combines a welcoming community   atmosphere with everything families need to live, grow and thrive.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/fairy/",
       "image": "https://newstarterhomes.ie/uploads/images/CGI%20Street%20view.jpg",
@@ -29,9 +29,9 @@
       "county": "Dublin",
       "bedrooms": "2 & 3 Bed",
       "price": 380000,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
-      "description": "Golding Green, Kinsealy, Co. Dublin applications will be open from 12:00 on the 8th of October 2026.",
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "The site is located between Clarehall and Malahide, and benefits from strong transport links   including bus services along the Malahide Road and rail access from Portmarnock DART station.   The area is also served by established retail and community amenities.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/gold/",
       "image": "https://newstarterhomes.ie/uploads/images/Golding%20Green%20Header.png",
