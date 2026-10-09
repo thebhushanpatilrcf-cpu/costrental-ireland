@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T00:50:26Z",
+  "last_updated": "2026-10-09T14:09:11Z",
   "listings": [
     {
       "id": "ah-furzefield",
@@ -2603,8 +2603,8 @@
       "county": "Dublin",
       "bedrooms": "1, 2 & 3 Bed",
       "rent": 1395,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
