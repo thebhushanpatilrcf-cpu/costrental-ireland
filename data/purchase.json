@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-10-12T18:02:29Z",
+  "last_updated": "2026-10-13T00:52:55Z",
   "listings": [
-    {
-      "id": "buy-marketclose1",
-      "provider": "Wicklow County Council",
-      "name": "Market Close",
-      "location": "Dunlavin, Co. Wicklow",
-      "county": "Wicklow",
-      "bedrooms": "2 Bed",
-      "price": 295072,
-      "status": "closed",
-      "status_text": "Applications Closed",
-      "description": "Wicklow County Council, proudly present Four new homes for sale at Market Close Dunlavin, Co. Wicklow. These homes are being made available for sale supported by the Department of Housing, Local Government and Heritage and in partnership with Amazon Developments through the affordable purchase arrangements under the Affordable Housing Act 2021 and associated regulations.",
-      "availability": "",
-      "url": "https://affordablehomes.ie/buy/marketclose1/",
-      "image": "https://newstarterhomes.ie/uploads/images/market-close(1",
-      "provider_url": "https://affordablehomes.ie",
-      "ber_rating": "",
-      "property_type": "apartment",
-      "date_closes": null,
-      "date_opens": null,
-      "price_from": 295072,
-      "price_to": null
-    },
     {
       "id": "buy-osc",
       "provider": "Dublin City Council",
@@ -142,6 +120,28 @@
       "property_type": "apartment",
       "date_closes": null,
       "date_opens": null
+    },
+    {
+      "id": "buy-marketclose1",
+      "provider": "Wicklow County Council",
+      "name": "Market Close",
+      "location": "Dunlavin, Co. Wicklow",
+      "county": "Wicklow",
+      "bedrooms": "2 Bed",
+      "price": 295072,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Wicklow County Council, proudly present Four new homes for sale at Market Close Dunlavin, Co. Wicklow. These homes are being made available for sale supported by the Department of Housing, Local Government and Heritage and in partnership with Amazon Developments through the affordable purchase arrangements under the Affordable Housing Act 2021 and associated regulations.",
+      "availability": "",
+      "url": "https://affordablehomes.ie/buy/marketclose1/",
+      "image": "https://newstarterhomes.ie/uploads/images/market-close(1",
+      "provider_url": "https://affordablehomes.ie",
+      "ber_rating": "",
+      "property_type": "apartment",
+      "date_closes": null,
+      "date_opens": null,
+      "price_from": 295072,
+      "price_to": null
     },
     {
       "id": "buy-fairy",
