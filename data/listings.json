@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T23:31:28Z",
+  "last_updated": "2026-10-14T08:12:05Z",
   "listings": [
     {
       "id": "ah-harmen",
@@ -2584,8 +2584,8 @@
       "county": "Dublin",
       "bedrooms": "1, 2 & 3 Bed",
       "rent": 1509,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
