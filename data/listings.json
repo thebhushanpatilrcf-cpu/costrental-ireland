@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T22:51:27Z",
+  "last_updated": "2026-10-15T12:18:05Z",
   "listings": [
     {
       "id": "ah-harmen",
@@ -2606,6 +2606,23 @@
       "url": "https://www.cluid.ie/property/ard-na-saili/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/IMG-20260828-WA0008-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "lda-cookstown-gateway-cookstown-dublin-24-6",
+      "provider": "LDA",
+      "name": "Cookstown Gateway",
+      "location": "Cookstown, Dublin 24",
+      "county": "Dublin",
+      "bedrooms": "Studio",
+      "rent": 1017,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "The Land Development Agency presents Cookstown Gateway, a new housing development located in Cookstown, Dublin 24. A small number of studio, one-bedroom, and two-bedroom apartments are available to rent from €1,017 per calendar month. Car parking is",
+      "amenities": [],
+      "parking": false,
+      "url": "https://lda.ie/homes/lda-cost-rental/cookstown-gateway-cookstown-dublin-24-6",
+      "image": "https://lda.ie/uploads/images/The-Gateway-Info-Card_2024-06-24-102638_gcny.png",
+      "provider_url": "https://lda.ie"
     }
   ],
   "providers": [
