@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T00:55:37Z",
+  "last_updated": "2026-10-20T10:39:51Z",
   "listings": [
     {
       "id": "ah-griffinpoint",
@@ -2584,6 +2584,25 @@
       "url": "https://www.cluid.ie/property/ard-na-saili/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/IMG-20260828-WA0008-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-woodbrook1",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Shankill, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 & 2 Bed",
+      "rent": 1495,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/woodbrook1/",
+      "image": "https://affordablehomes.ie/uploads/images/WOODBROOK/13-web-or-mls-Woodbrook%20-%20Ext-9.jpg",
+      "ber_rating": "A",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "20 October 2026 at 12:00"
     }
   ],
   "providers": [
