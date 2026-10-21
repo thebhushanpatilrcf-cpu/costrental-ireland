@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T22:49:57Z",
+  "last_updated": "2026-10-21T12:35:09Z",
   "listings": [
     {
       "id": "ah-woodbrook1",
@@ -2599,8 +2599,8 @@
       "county": "Dublin",
       "bedrooms": "1 Bed",
       "rent": 1525,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2645,6 +2645,25 @@
       "url": "https://www.cluid.ie/property/ard-na-saili/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/IMG-20260828-WA0008-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-kilcarberygrange3",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Clondalkin, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "3 Bed",
+      "rent": 1799,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/kilcarberygrange3/",
+      "image": "https://affordablehomes.ie/uploads/images/Kilcarberry%20Grange%20-%20rowans%20and%20ashes.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "21 October 2026 at 14:00"
     }
   ],
   "providers": [
