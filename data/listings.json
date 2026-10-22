@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T13:54:04Z",
+  "last_updated": "2026-10-22T15:44:48Z",
   "listings": [
     {
       "id": "ah-bennetstown",
@@ -2540,6 +2540,23 @@
       "date_closes": null,
       "date_opens": null,
       "market_rent": 2000
+    },
+    {
+      "id": "lda-woodbrook-shankill-dublin-18",
+      "provider": "LDA",
+      "name": "Woodbrook",
+      "location": "Shankill, Dublin 18",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1495,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "The Land Development Agency (LDA) presents Woodbrook, a new housing development located in Dublin. Offering a choice of one-bedroom and two-bedroom apartments from €1,495 per calendar month. Limited parking is available at an additional charge per mo",
+      "amenities": [],
+      "parking": true,
+      "url": "https://lda.ie/homes/lda-cost-rental/woodbrook-shankill-dublin-18",
+      "image": "https://lda.ie/uploads/images/Woodbrook-Scheme-Picture-Card-1.jpg",
+      "provider_url": "https://lda.ie"
     }
   ],
   "providers": [
