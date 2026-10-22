@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T15:44:48Z",
+  "last_updated": "2026-10-22T19:38:38Z",
   "listings": [
     {
       "id": "ah-bennetstown",
@@ -2557,6 +2557,23 @@
       "url": "https://lda.ie/homes/lda-cost-rental/woodbrook-shankill-dublin-18",
       "image": "https://lda.ie/uploads/images/Woodbrook-Scheme-Picture-Card-1.jpg",
       "provider_url": "https://lda.ie"
+    },
+    {
+      "id": "cluid-exchange-square",
+      "provider": "Clúid Housing",
+      "name": "Exchange Square",
+      "location": "Exchange Square, Seven Mills, Dublin 22",
+      "county": "Dublin",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/exchange-square/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2026/10/exchange-square-exterior-540x340.png",
+      "provider_url": "https://www.cluid.ie"
     }
   ],
   "providers": [
