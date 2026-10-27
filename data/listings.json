@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T01:44:00Z",
+  "last_updated": "2026-10-27T13:46:09Z",
   "listings": [
     {
       "id": "ah-woodbrook1",
@@ -2667,6 +2667,59 @@
       "url": "https://www.cluid.ie/property/exchange-square/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/exchange-square-exterior-540x340.png",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "lda-horgans-quay-cork-city-general-lottery",
+      "provider": "LDA",
+      "name": "Horgan's Quay",
+      "location": "Co. Cork - General Lottery",
+      "county": "Cork",
+      "bedrooms": "1 Bed",
+      "rent": 1395,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "The Land Development Agency (LDA) presents Horgan's Quay, a new housing development located in Co. Cork. Offering a choice of one-bedroom and two-bedroom apartments from €1,395 per calendar month. Limited parking is available at an additional charge",
+      "amenities": [],
+      "parking": true,
+      "url": "https://lda.ie/homes/lda-cost-rental/horgans-quay-cork-city-general-lottery",
+      "image": "https://lda.ie/uploads/images/Horgans-Quay-Scheme-Picture-Card_2026-10-13-135015_unxv.jpg",
+      "provider_url": "https://lda.ie"
+    },
+    {
+      "id": "lda-horgans-quay-cork-city-local-employment-lottery",
+      "provider": "LDA",
+      "name": "Horgan's Quay",
+      "location": "Co. Cork - Local Employment Lottery",
+      "county": "Cork",
+      "bedrooms": "1 Bed",
+      "rent": 1395,
+      "status": "open",
+      "status_text": "Applications Now Open",
+      "description": "The Land Development Agency (LDA) presents Horgan's Quay, a new housing development located in Co. Cork. Offering a choice of one-bedroom and two-bedroom apartments from €1,395 per calendar month. Limited parking is available at an additional charge",
+      "amenities": [],
+      "parking": true,
+      "url": "https://lda.ie/homes/lda-cost-rental/horgans-quay-cork-city-local-employment-lottery",
+      "image": "https://lda.ie/uploads/images/Horgans-Quay-Scheme-Picture-Card_2026-10-13-135015_unxv.jpg",
+      "provider_url": "https://lda.ie"
+    },
+    {
+      "id": "affordable-horgansquay",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Cork City, Co. Cork",
+      "county": "Cork",
+      "bedrooms": "1 & 2 Bed",
+      "rent": 1395,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/horgansquay/",
+      "image": "https://affordablehomes.ie/uploads/images/6-web-or-mls-Horgans%20Exteriors-2.jpg",
+      "ber_rating": "A",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "03 November 2026 at 12:00"
     }
   ],
   "providers": [
