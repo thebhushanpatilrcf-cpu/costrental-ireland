@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-29T15:29:19Z",
+  "last_updated": "2026-10-29T22:55:46Z",
   "listings": [
     {
       "id": "buy-brackinraineywoods",
@@ -71,8 +71,8 @@
       "county": "Dublin",
       "bedrooms": "2 & 3 Bed",
       "price": 380000,
-      "status": "open",
-      "status_text": "Applications Open",
+      "status": "closed",
+      "status_text": "Applications Closed",
       "description": "The site is located between Clarehall and Malahide, and benefits from strong transport links   including bus services along the Malahide Road and rail access from Portmarnock DART station.   The area is also served by established retail and community amenities.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/gold/",
@@ -337,8 +337,8 @@
       "county": "Tipperary",
       "bedrooms": "3 Bed",
       "price": 309326,
-      "status": "closed",
-      "status_text": "Applications Closed",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "Carrick-on-Suir is a historic market town located in the south-east of County Tipperary on the banks   of the River Suir. Situated approximately 21 km east of Clonmel and 27 km north-west of Waterford   City, the town serves as an important service, employment and cultural centre for the surrounding   rural hinterland. The town has a population of approximately 5,750 people according to the 2022   Census.",
       "availability": "",
       "url": "https://affordablehomes.ie/buy/lakeview/",
