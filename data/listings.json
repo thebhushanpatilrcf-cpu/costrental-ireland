@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T23:48:01Z",
+  "last_updated": "2026-11-04T11:47:32Z",
   "listings": [
     {
       "id": "ah-coolevally2",
@@ -2580,8 +2580,8 @@
       "county": "Dublin",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2597,14 +2597,33 @@
       "county": "Dublin",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
       "url": "https://www.cluid.ie/property/exchange-square/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/exchange-square-exterior-540x340.png",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-woodsiderise2",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Enniskerry, Dublin 18, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "2 Bed",
+      "rent": 1257,
+      "status": "coming_soon",
+      "status_text": "Coming Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/woodsiderise2/",
+      "image": "https://affordablehomes.ie/uploads/images/woodside/WV1.jpg",
+      "ber_rating": "A3",
+      "provider_url": "https://affordablehomes.ie",
+      "date_opens": "04 November 2026 at 14:00"
     }
   ],
   "providers": [
