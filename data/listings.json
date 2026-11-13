@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T03:10:10Z",
+  "last_updated": "2026-11-13T11:43:22Z",
   "listings": [
     {
       "id": "ah-carrigmore",
@@ -2673,6 +2673,23 @@
       "parking": null,
       "url": "https://www.cluid.ie/property/exchange-square/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/exchange-square-exterior-540x340.png",
+      "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "cluid-the-maltings-nov26",
+      "provider": "Clúid Housing",
+      "name": "The Maltings",
+      "location": "Portlaoise, Co. Laois",
+      "county": "Dublin",
+      "bedrooms": "",
+      "rent": null,
+      "status": "coming_soon",
+      "status_text": "Launching Soon",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://www.cluid.ie/property/the-maltings-nov26/",
+      "image": "https://www.cluid.ie/wp-content/uploads/2024/05/the-maltings-intro1-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
     }
   ],
