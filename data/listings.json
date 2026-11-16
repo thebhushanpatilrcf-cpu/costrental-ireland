@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-15T23:15:54Z",
+  "last_updated": "2026-11-16T12:17:00Z",
   "listings": [
     {
       "id": "ah-carrigmore",
@@ -2725,6 +2725,25 @@
       "url": "https://www.cluid.ie/property/exchange-square/",
       "image": "https://www.cluid.ie/wp-content/uploads/2026/10/exchange-square-exterior-540x340.png",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-deverdonplace5",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Malahide Road, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "2 Bed",
+      "rent": 1695,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/deverdonplace5/",
+      "image": "https://affordablehomes.ie/uploads/images/Devon/DeVerdon%201.jpg",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "20 November 2026 at 14:00"
     }
   ],
   "providers": [
