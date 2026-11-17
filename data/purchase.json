@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-11-16T18:43:08Z",
+  "last_updated": "2026-11-17T02:02:38Z",
   "listings": [
-    {
-      "id": "buy-radharcnatornoige",
-      "provider": "Galway City Council",
-      "name": "Radharc Na Tornoige",
-      "location": "Headford Road, Co. Galway",
-      "county": "Galway",
-      "bedrooms": "1 Bed",
-      "price": 234980,
-      "status": "closed",
-      "status_text": "Applications Closed",
-      "description": "Red Fox Residential proudly presents 2 new homes for sale at Radharc Na Tornóige, Headford Road, Galway City. Two no. 1 bed apartments on the ground floor (no parking space)  are being made available for sale in partnership with Galway City Council through the affordable purchase arrangements, under the Affordable Housing Act 2021 and associated regulations.",
-      "availability": "",
-      "url": "https://affordablehomes.ie/buy/radharcnatornoige/",
-      "image": "https://newstarterhomes.ie/uploads/images/Block%20B%20PC.png",
-      "provider_url": "https://affordablehomes.ie",
-      "ber_rating": "",
-      "property_type": "apartment",
-      "date_closes": null,
-      "date_opens": null,
-      "price_from": 234980,
-      "price_to": 325000
-    },
     {
       "id": "buy-fortview",
       "provider": "Cavan County Council",
@@ -104,6 +82,28 @@
       "property_type": "house",
       "date_closes": null,
       "date_opens": null
+    },
+    {
+      "id": "buy-radharcnatornoige",
+      "provider": "Galway City Council",
+      "name": "Radharc Na Tornoige",
+      "location": "Headford Road, Co. Galway",
+      "county": "Galway",
+      "bedrooms": "1 Bed",
+      "price": 234980,
+      "status": "closed",
+      "status_text": "Applications Closed",
+      "description": "Red Fox Residential proudly presents 2 new homes for sale at Radharc Na Tornóige, Headford Road, Galway City. Two no. 1 bed apartments on the ground floor (no parking space)  are being made available for sale in partnership with Galway City Council through the affordable purchase arrangements, under the Affordable Housing Act 2021 and associated regulations.",
+      "availability": "",
+      "url": "https://affordablehomes.ie/buy/radharcnatornoige/",
+      "image": "https://newstarterhomes.ie/uploads/images/Block%20B%20PC.png",
+      "provider_url": "https://affordablehomes.ie",
+      "ber_rating": "",
+      "property_type": "apartment",
+      "date_closes": null,
+      "date_opens": null,
+      "price_from": 234980,
+      "price_to": 325000
     },
     {
       "id": "buy-marketclose1",
