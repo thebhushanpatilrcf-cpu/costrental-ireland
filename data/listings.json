@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25T04:41:42Z",
+  "last_updated": "2026-11-25T15:10:20Z",
   "listings": [
     {
       "id": "ah-oscar",
@@ -2770,8 +2770,8 @@
       "county": "Dublin",
       "bedrooms": "1 Bed",
       "rent": 1245,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2884,8 +2884,8 @@
       "county": "Dublin",
       "bedrooms": "",
       "rent": null,
-      "status": "coming_soon",
-      "status_text": "Launching Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
@@ -2943,6 +2943,44 @@
       "url": "https://www.cluid.ie/property/the-maltings-nov26/",
       "image": "https://www.cluid.ie/wp-content/uploads/2024/05/the-maltings-intro1-540x340.jpg",
       "provider_url": "https://www.cluid.ie"
+    },
+    {
+      "id": "affordable-semplewoods2",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Donabate, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1327,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/semplewoods2/",
+      "image": "https://affordablehomes.ie/uploads/images/Semple-Woods-Web-Page.png",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "30 November 2026 at 14:00"
+    },
+    {
+      "id": "affordable-foxwoodbarn3",
+      "provider": "AffordableHomes.ie",
+      "name": "Read More",
+      "location": "Citywest, Co. Dublin 24, Co. Dublin",
+      "county": "Dublin",
+      "bedrooms": "1 Bed",
+      "rent": 1395,
+      "status": "open",
+      "status_text": "Applications Open",
+      "description": "",
+      "amenities": [],
+      "parking": null,
+      "url": "https://affordablehomes.ie/rent/foxwoodbarn3/",
+      "image": "https://affordablehomes.ie/uploads/images/foxwood%20barn/FB1.png",
+      "ber_rating": "A2",
+      "provider_url": "https://affordablehomes.ie",
+      "date_closes": "30 November 2026 at 14:00"
     }
   ],
   "providers": [
