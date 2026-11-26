@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T05:58:54Z",
+  "last_updated": "2026-11-26T16:29:59Z",
   "listings": [
     {
       "id": "ah-kill",
@@ -2750,8 +2750,8 @@
       "county": "Dublin",
       "bedrooms": "1 Bed",
       "rent": 1268,
-      "status": "coming_soon",
-      "status_text": "Coming Soon",
+      "status": "open",
+      "status_text": "Applications Open",
       "description": "",
       "amenities": [],
       "parking": null,
